@@ -10,7 +10,12 @@ $sm: 568px;
         @content;
     }
 }
-
+.bg-color-gray{
+    background-color: #EAE9FF;
+}
+.bg-color-gray-300{
+    background-color: #F2F1FE;
+}
 .btn-style-1 {
     background: linear-gradient(180deg, #FF9052 0%, #FB5520 100%) !important;
     color: #fff !important;
@@ -605,12 +610,16 @@ ul.menu-footer {
         }
 
         .tab-content {
+            .content-wrapper {
+                padding: 20px;
+                border-radius: 6px;
+            }
             section {
                 border-radius: 6px;
             }
 
             #pills-messenger {
-                padding: 30px;
+                padding: 20px;
                 background-color: #F2F1FE;
                 border-radius: 6px;
 
@@ -629,14 +638,63 @@ ul.menu-footer {
                     }
                 }
             }
-
-            border-radius: 6px;
+            #pills-transfer-money{
+                .table-custom-style{
+                    background-color: #fff;
+                    thead{
+                        background-color: #5B54E1;
+                        th{
+                            border-right: 1px solid;
+                            &:last-child{
+                                border: 0 none;
+                            }
+                        }
+                    }
+                    tbody{
+                        tr{
+                            td{
+                                border: 1px solid #D9D9D9;
+                                background-color: white!important;
+                                vertical-align: middle;
+                                .icon-reload{
+                                    font-size: 20px;
+                                    color: #202020;
+                                    &:hover{
+                                        color: #5B54E1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .form-group {
+                    .form-control{
+                        height: 42px;
+                    }
+                    .label-red{
+                        color: red;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
 
             .account-detail {
                 background-color: #EAE9FF;
-                padding: 30px;
+                padding: 20px;
             }
-
+            .bankaccount{
+                .content-head{
+                    padding: 20px;
+                    border-radius: 6px;
+                    .content-img{
+                        margin-right: 30px;
+                    }
+                }
+                .list-bank-account{
+                    padding: 20px;
+                    border-radius: 6px;
+                }
+            }
             .avatar__change {
                 text-align: center;
 
@@ -1148,6 +1206,12 @@ ul.menu-footer {
 
         &:hover {
             background: linear-gradient(180deg, #FF9052 0%, #FB5520 0%);
+        }
+    }
+    &.textarea{
+        align-items: flex-start;
+        .form-control{
+            min-height: 160px;
         }
     }
 }

@@ -1,3 +1,9 @@
+.bg-color-gray {
+  background-color: #EAE9FF; }
+
+.bg-color-gray-300 {
+  background-color: #F2F1FE; }
+
 .btn-style-1 {
   background: linear-gradient(180deg, #FF9052 0%, #FB5520 100%) !important;
   color: #fff !important; }
@@ -439,99 +445,130 @@ ul.menu-footer {
         justify-content: center;
         font-size: 14px;
         line-height: 1; }
-.acccout-page .account-content .tab-content {
+.acccout-page .account-content .tab-content .content-wrapper {
+  padding: 20px;
   border-radius: 6px; }
-  .acccout-page .account-content .tab-content section {
-    border-radius: 6px; }
-  .acccout-page .account-content .tab-content #pills-messenger {
-    padding: 30px;
-    background-color: #F2F1FE;
-    border-radius: 6px; }
-    .acccout-page .account-content .tab-content #pills-messenger .nav-item button {
-      background: #EAE9FF;
-      border: 1px solid #7E8590;
-      padding: 6px 20px;
-      color: #515966; }
-      .acccout-page .account-content .tab-content #pills-messenger .nav-item button.active, .acccout-page .account-content .tab-content #pills-messenger .nav-item button:hover {
-        background-color: #7740EC;
-        color: #fff; }
-  .acccout-page .account-content .tab-content .account-detail {
-    background-color: #EAE9FF;
-    padding: 30px; }
-  .acccout-page .account-content .tab-content .avatar__change {
-    text-align: center; }
-    .acccout-page .account-content .tab-content .avatar__change .avatar-img {
-      border-radius: 50%;
-      position: relative;
-      display: flex;
-      justify-content: center; }
-      .acccout-page .account-content .tab-content .avatar__change .avatar-img img {
-        max-width: 120px; }
-      .acccout-page .account-content .tab-content .avatar__change .avatar-img .icon_camera {
-        background-image: url(../img/icon/icon_camera.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 40px;
-        height: 40px;
-        display: block;
-        border-radius: 50%;
-        background-color: #fff;
-        position: absolute;
-        bottom: 0; }
-    .acccout-page .account-content .tab-content .avatar__change .note {
-      font-size: 14px;
-      margin: 15px;
-      color: #545454; }
-    .acccout-page .account-content .tab-content .avatar__change .btn {
-      background: linear-gradient(180deg, #20E486 0%, #0C9C46 100%);
-      border: 0 none;
-      color: #fff;
-      padding: 10px 40px; }
-  .acccout-page .account-content .tab-content .heading {
-    font-size: 20px;
+.acccout-page .account-content .tab-content section {
+  border-radius: 6px; }
+.acccout-page .account-content .tab-content #pills-messenger {
+  padding: 20px;
+  background-color: #F2F1FE;
+  border-radius: 6px; }
+  .acccout-page .account-content .tab-content #pills-messenger .nav-item button {
+    background: #EAE9FF;
+    border: 1px solid #7E8590;
+    padding: 6px 20px;
+    color: #515966; }
+    .acccout-page .account-content .tab-content #pills-messenger .nav-item button.active, .acccout-page .account-content .tab-content #pills-messenger .nav-item button:hover {
+      background-color: #7740EC;
+      color: #fff; }
+.acccout-page .account-content .tab-content #pills-transfer-money .table-custom-style {
+  background-color: #fff; }
+  .acccout-page .account-content .tab-content #pills-transfer-money .table-custom-style thead {
+    background-color: #5B54E1; }
+    .acccout-page .account-content .tab-content #pills-transfer-money .table-custom-style thead th {
+      border-right: 1px solid; }
+      .acccout-page .account-content .tab-content #pills-transfer-money .table-custom-style thead th:last-child {
+        border: 0 none; }
+  .acccout-page .account-content .tab-content #pills-transfer-money .table-custom-style tbody tr td {
+    border: 1px solid #D9D9D9;
+    background-color: white !important;
+    vertical-align: middle; }
+    .acccout-page .account-content .tab-content #pills-transfer-money .table-custom-style tbody tr td .icon-reload {
+      font-size: 20px;
+      color: #202020; }
+      .acccout-page .account-content .tab-content #pills-transfer-money .table-custom-style tbody tr td .icon-reload:hover {
+        color: #5B54E1; }
+.acccout-page .account-content .tab-content #pills-transfer-money .form-group .form-control {
+  height: 42px; }
+.acccout-page .account-content .tab-content #pills-transfer-money .form-group .label-red {
+  color: red;
+  margin-bottom: 20px; }
+.acccout-page .account-content .tab-content .account-detail {
+  background-color: #EAE9FF;
+  padding: 20px; }
+.acccout-page .account-content .tab-content .bankaccount .content-head {
+  padding: 20px;
+  border-radius: 6px; }
+  .acccout-page .account-content .tab-content .bankaccount .content-head .content-img {
+    margin-right: 30px; }
+.acccout-page .account-content .tab-content .bankaccount .list-bank-account {
+  padding: 20px;
+  border-radius: 6px; }
+.acccout-page .account-content .tab-content .avatar__change {
+  text-align: center; }
+  .acccout-page .account-content .tab-content .avatar__change .avatar-img {
+    border-radius: 50%;
+    position: relative;
     display: flex;
-    align-items: center;
-    line-height: 1.25;
-    justify-content: center;
-    margin-bottom: 30px; }
-    .acccout-page .account-content .tab-content .heading .icon {
-      width: 32px;
-      height: 32px;
-      display: block;
+    justify-content: center; }
+    .acccout-page .account-content .tab-content .avatar__change .avatar-img img {
+      max-width: 120px; }
+    .acccout-page .account-content .tab-content .avatar__change .avatar-img .icon_camera {
+      background-image: url(../img/icon/icon_camera.png);
+      background-repeat: no-repeat;
       background-position: center;
-      background-size: 32px;
-      margin-right: 10px; }
-      .acccout-page .account-content .tab-content .heading .icon.icon_account {
-        background-image: url(../img/icon/icon_head_account.png); }
-      .acccout-page .account-content .tab-content .heading .icon.icon_nickname {
-        background-image: url(../img/icon_nickname.png); }
-  .acccout-page .account-content .tab-content .phone-info {
-    margin-top: 10px;
-    padding: 30px;
-    background-color: #F2F1FE; }
-    .acccout-page .account-content .tab-content .phone-info .icon_head_phone {
-      background-image: url(../img/icon/icon_head_phone.png); }
-    .acccout-page .account-content .tab-content .phone-info .form-wrapper {
-      margin-top: 30px; }
-    .acccout-page .account-content .tab-content .phone-info .form-group.justify-content-between button {
-      width: 170px; }
-    .acccout-page .account-content .tab-content .phone-info .form-group .input {
-      width: calc(100% - 330px); }
-  .acccout-page .account-content .tab-content .password-info {
-    background-color: #EAE9FF;
-    padding: 30px; }
-    .acccout-page .account-content .tab-content .password-info .icon_head_pass {
-      background-image: url(../img/icon/icon_head_pass.png); }
-  .acccout-page .account-content .tab-content .password-payment {
-    padding: 30px;
-    background-color: #F2F1FE; }
-    .acccout-page .account-content .tab-content .password-payment .icon_head_wallet {
-      background-image: url(../img/icon/icon_head_wallet.png); }
-  .acccout-page .account-content .tab-content .faq-section {
-    background-color: #EAE9FF;
-    padding: 30px; }
-    .acccout-page .account-content .tab-content .faq-section .icon_head_faq {
-      background-image: url(../img/icon/icon_head_faq.png); }
+      width: 40px;
+      height: 40px;
+      display: block;
+      border-radius: 50%;
+      background-color: #fff;
+      position: absolute;
+      bottom: 0; }
+  .acccout-page .account-content .tab-content .avatar__change .note {
+    font-size: 14px;
+    margin: 15px;
+    color: #545454; }
+  .acccout-page .account-content .tab-content .avatar__change .btn {
+    background: linear-gradient(180deg, #20E486 0%, #0C9C46 100%);
+    border: 0 none;
+    color: #fff;
+    padding: 10px 40px; }
+.acccout-page .account-content .tab-content .heading {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  line-height: 1.25;
+  justify-content: center;
+  margin-bottom: 30px; }
+  .acccout-page .account-content .tab-content .heading .icon {
+    width: 32px;
+    height: 32px;
+    display: block;
+    background-position: center;
+    background-size: 32px;
+    margin-right: 10px; }
+    .acccout-page .account-content .tab-content .heading .icon.icon_account {
+      background-image: url(../img/icon/icon_head_account.png); }
+    .acccout-page .account-content .tab-content .heading .icon.icon_nickname {
+      background-image: url(../img/icon_nickname.png); }
+.acccout-page .account-content .tab-content .phone-info {
+  margin-top: 10px;
+  padding: 30px;
+  background-color: #F2F1FE; }
+  .acccout-page .account-content .tab-content .phone-info .icon_head_phone {
+    background-image: url(../img/icon/icon_head_phone.png); }
+  .acccout-page .account-content .tab-content .phone-info .form-wrapper {
+    margin-top: 30px; }
+  .acccout-page .account-content .tab-content .phone-info .form-group.justify-content-between button {
+    width: 170px; }
+  .acccout-page .account-content .tab-content .phone-info .form-group .input {
+    width: calc(100% - 330px); }
+.acccout-page .account-content .tab-content .password-info {
+  background-color: #EAE9FF;
+  padding: 30px; }
+  .acccout-page .account-content .tab-content .password-info .icon_head_pass {
+    background-image: url(../img/icon/icon_head_pass.png); }
+.acccout-page .account-content .tab-content .password-payment {
+  padding: 30px;
+  background-color: #F2F1FE; }
+  .acccout-page .account-content .tab-content .password-payment .icon_head_wallet {
+    background-image: url(../img/icon/icon_head_wallet.png); }
+.acccout-page .account-content .tab-content .faq-section {
+  background-color: #EAE9FF;
+  padding: 30px; }
+  .acccout-page .account-content .tab-content .faq-section .icon_head_faq {
+    background-image: url(../img/icon/icon_head_faq.png); }
 
 .categories-list2 li {
   margin-bottom: 20px; }
@@ -777,6 +814,10 @@ ul.menu-footer {
     padding: 10px 40px; }
     .form-group button:hover {
       background: linear-gradient(180deg, #FF9052 0%, #FB5520 0%); }
+  .form-group.textarea {
+    align-items: flex-start; }
+    .form-group.textarea .form-control {
+      min-height: 160px; }
 
 /* ======================= FORM LOGIN ===========================*/
 @media (max-width: 991px) {

@@ -44,3 +44,6 @@ setInterval(function(){
     currentTime = getDateTime();
     document.getElementById("digital-clock").innerHTML = currentTime;
 }, 1000);
+$(document).ready(function() {
+    $('#datetimepicker1').datetimepicker();
+});
