@@ -550,6 +550,10 @@ ul.menu-footer {
     }
 
 }
+.content-wrapper {
+    padding: 20px;
+    border-radius: 6px;
+}
 /*-=================ACCOUNT PAGE +==================*/
 .acccout-page {
     .categories-list {
@@ -591,10 +595,6 @@ ul.menu-footer {
                 }
             }
         }
-    }
-    .content-wrapper {
-        padding: 20px;
-        border-radius: 6px;
     }
 
     .account-content {
@@ -863,10 +863,10 @@ ul.menu-footer {
     }
 }
 /*================ THÔNG BÁO ==================*/@at-root
-.register-links{
-    .icon_head_link{
-        background-image: url(../img/icon/icon_heading_07.png);
-    }
+.notification-page{
+        .icon_head_notification{
+            background-image: url(../img/icon/icon_notification.png);
+        }
 }
 /*============== TABLE STYLE=================*/
 .table-custom-style {

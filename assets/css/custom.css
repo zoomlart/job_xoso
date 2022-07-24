@@ -422,6 +422,10 @@ ul.menu-footer {
     .heading .icon.icon_nickname {
       background-image: url(../img/icon_nickname.png); }
 
+.content-wrapper {
+  padding: 20px;
+  border-radius: 6px; }
+
 /*-=================ACCOUNT PAGE +==================*/
 .acccout-page .categories-list a.active, .acccout-page .categories-list a:hover {
   background-color: #FEC36B;
@@ -440,9 +444,6 @@ ul.menu-footer {
   background-image: url(../img/icon/icon_cat_wallet.png); }
 .acccout-page .categories-list a .icon.icon_cat_faq {
   background-image: url(../img/icon/icon_cat_faq.png); }
-.acccout-page .content-wrapper {
-  padding: 20px;
-  border-radius: 6px; }
 .acccout-page .account-content .nav .nav-item {
   margin-right: 10px; }
   .acccout-page .account-content .nav .nav-item button {
@@ -605,8 +606,8 @@ ul.menu-footer {
 .register-links .icon_head_link {
   background-image: url(../img/icon/icon_heading_07.png); }
 /*================ THÔNG BÁO ==================*/
-.register-links .icon_head_link {
-  background-image: url(../img/icon/icon_heading_07.png); }
+.notification-page .icon_head_notification {
+  background-image: url(../img/icon/icon_notification.png); }
 /*============== TABLE STYLE=================*/
 .table-custom-style thead {
   background-color: #9692EA; }
