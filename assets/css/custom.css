@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .bg-color-gray {
   background-color: #EAE9FF; }
 
@@ -402,6 +403,25 @@ ul.menu-footer {
       .left-sidebar .sidebar-content .categories-list2 {
         padding: 15px; } }
 
+.heading {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  line-height: 1.25;
+  justify-content: center;
+  margin-bottom: 30px; }
+  .heading .icon {
+    width: 32px;
+    height: 32px;
+    display: block;
+    background-position: center;
+    background-size: 32px;
+    margin-right: 10px; }
+    .heading .icon.icon_account {
+      background-image: url(../img/icon/icon_head_account.png); }
+    .heading .icon.icon_nickname {
+      background-image: url(../img/icon_nickname.png); }
+
 /*-=================ACCOUNT PAGE +==================*/
 .acccout-page .categories-list a.active, .acccout-page .categories-list a:hover {
   background-color: #FEC36B;
@@ -420,6 +440,9 @@ ul.menu-footer {
   background-image: url(../img/icon/icon_cat_wallet.png); }
 .acccout-page .categories-list a .icon.icon_cat_faq {
   background-image: url(../img/icon/icon_cat_faq.png); }
+.acccout-page .content-wrapper {
+  padding: 20px;
+  border-radius: 6px; }
 .acccout-page .account-content .nav .nav-item {
   margin-right: 10px; }
   .acccout-page .account-content .nav .nav-item button {
@@ -479,11 +502,13 @@ ul.menu-footer {
       color: #202020; }
       .acccout-page .account-content .tab-content #pills-transfer-money .table-custom-style tbody tr td .icon-reload:hover {
         color: #5B54E1; }
-.acccout-page .account-content .tab-content #pills-transfer-money .form-group .form-control {
-  height: 42px; }
 .acccout-page .account-content .tab-content #pills-transfer-money .form-group .label-red {
   color: red;
   margin-bottom: 20px; }
+.acccout-page .account-content .tab-content #pills-history .jsdate {
+  position: relative; }
+  .acccout-page .account-content .tab-content #pills-history .jsdate .input-group-addon {
+    position: absolute; }
 .acccout-page .account-content .tab-content .account-detail {
   background-color: #EAE9FF;
   padding: 20px; }
@@ -550,8 +575,9 @@ ul.menu-footer {
     background-image: url(../img/icon/icon_head_phone.png); }
   .acccout-page .account-content .tab-content .phone-info .form-wrapper {
     margin-top: 30px; }
-  .acccout-page .account-content .tab-content .phone-info .form-group.justify-content-between button {
-    width: 170px; }
+  .acccout-page .account-content .tab-content .phone-info .form-group button.btn-custom {
+    width: 170px;
+    padding: 6px 30px; }
   .acccout-page .account-content .tab-content .phone-info .form-group .input {
     width: calc(100% - 330px); }
 .acccout-page .account-content .tab-content .password-info {
@@ -575,6 +601,12 @@ ul.menu-footer {
   .categories-list2 li:last-child {
     margin-bottom: 0; }
 
+/*================ LIEN KET DANG KY ==================*/
+.register-links .icon_head_link {
+  background-image: url(../img/icon/icon_heading_07.png); }
+/*================ THÔNG BÁO ==================*/
+.register-links .icon_head_link {
+  background-image: url(../img/icon/icon_heading_07.png); }
 /*============== TABLE STYLE=================*/
 .table-custom-style thead {
   background-color: #9692EA; }
@@ -768,28 +800,17 @@ ul.menu-footer {
 
 /*======================= FORM CUSTOM ===========================*/
 .form-group {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   margin-bottom: 20px; }
-  .form-group .col-form-label {
-    position: relative;
-    width: 140px;
-    display: flex;
-    align-items: center;
-    padding: 0; }
   .form-group .input {
     width: calc(100% - 150px);
     position: relative; }
-    .form-group .input .form-control {
-      height: 42px; }
-      .form-group .input .form-control::-moz-placeholder {
-        color: #999 !important;
-        opacity: 1; }
-      .form-group .input .form-control:-ms-input-placeholder {
-        color: #999 !important; }
-      .form-group .input .form-control::-webkit-input-placeholder {
-        color: #999 !important; }
+    .form-group .input .form-control::-moz-placeholder {
+      color: #999 !important;
+      opacity: 1; }
+    .form-group .input .form-control:-ms-input-placeholder {
+      color: #999 !important; }
+    .form-group .input .form-control::-webkit-input-placeholder {
+      color: #999 !important; }
   .form-group .l-required::after {
     display: inline-block;
     content: "*";

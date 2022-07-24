@@ -219,7 +219,6 @@ header.bg-light.slide-top {
     justify-content: center;
     margin: 0;
 }
-
 .card-body ul li {
     width: 42px;
     height: 42px;
@@ -524,7 +523,33 @@ ul.menu-footer {
         }
     }
 }
+.heading {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    line-height: 1.25;
+    justify-content: center;
+    margin-bottom: 30px;
 
+    .icon {
+        width: 32px;
+        height: 32px;
+        display: block;
+        background-position: center;
+        background-size: 32px;
+        margin-right: 10px;
+
+        &.icon_account {
+            background-image: url(../img/icon/icon_head_account.png);
+
+        }
+
+        &.icon_nickname {
+            background-image: url(../img/icon_nickname.png);
+        }
+    }
+
+}
 /*-=================ACCOUNT PAGE +==================*/
 .acccout-page {
     .categories-list {
@@ -566,6 +591,10 @@ ul.menu-footer {
                 }
             }
         }
+    }
+    .content-wrapper {
+        padding: 20px;
+        border-radius: 6px;
     }
 
     .account-content {
@@ -668,16 +697,21 @@ ul.menu-footer {
                     }
                 }
                 .form-group {
-                    .form-control{
-                        height: 42px;
-                    }
                     .label-red{
                         color: red;
                         margin-bottom: 20px;
                     }
                 }
             }
+            #pills-history{
+                .jsdate{
+                    position: relative;
+                    .input-group-addon{
+                        position: absolute;
 
+                    }
+                }
+            }
             .account-detail {
                 background-color: #EAE9FF;
                 padding: 20px;
@@ -773,17 +807,15 @@ ul.menu-footer {
                 .icon_head_phone {
                     background-image: url(../img/icon/icon_head_phone.png);
                 }
-
                 .form-wrapper {
                     margin-top: 30px;
                 }
-
-                .form-group.justify-content-between {
-                    button {
+                .form-group{
+                    button.btn-custom {
                         width: 170px;
+                        padding: 6px 30px;
                     }
                 }
-
                 .form-group .input {
                     width: calc(100% - 330px);
                 }
@@ -818,15 +850,24 @@ ul.menu-footer {
         }
     }
 }
-
 .categories-list2 li {
     margin-bottom: 20px;
-
     &:last-child {
         margin-bottom: 0;
     }
 }
-
+/*================ LIEN KET DANG KY ==================*/@at-root
+.register-links{
+    .icon_head_link{
+        background-image: url(../img/icon/icon_heading_07.png);
+    }
+}
+/*================ THÔNG BÁO ==================*/@at-root
+.register-links{
+    .icon_head_link{
+        background-image: url(../img/icon/icon_heading_07.png);
+    }
+}
 /*============== TABLE STYLE=================*/
 .table-custom-style {
     thead {
@@ -1142,25 +1183,12 @@ ul.menu-footer {
 
 /*======================= FORM CUSTOM ===========================*/
 .form-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     margin-bottom: 20px;
-
-    .col-form-label {
-        position: relative;
-        width: 140px;
-        display: flex;
-        align-items: center;
-        padding: 0;
-    }
-
     .input {
         width: calc(100% - 150px);
         position: relative;
 
         .form-control {
-            height: 42px;
 
             &::-moz-placeholder {
                 color: #999 !important;

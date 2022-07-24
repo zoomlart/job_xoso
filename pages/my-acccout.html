@@ -11,8 +11,12 @@
     <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.38.0/css/tempusdominus-bootstrap-4.min.css"
+        crossorigin="anonymous" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="../assets/css/styles.css" rel="stylesheet" />
+    <link href="../assets/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
     <link href="../assets/css/custom.css" rel="stylesheet" />
 </head>
 
@@ -290,22 +294,26 @@
                                                     <span class="text">Ảnh đại diện</span>
                                                 </h2>
                                                 <form class="wrap">
-                                                    <div class="form-group ">
-                                                        <label for="username" class="col-form-label">Tên đăng
-                                                            nhập</label>
-                                                        <div class="input">
-                                                            <input type="text" class="form-control" id="username"
+                                                    <div class="form-group row">
+                                                        <label for="username" class="col-form-label justify-content-end d-flex align-items-center col-lg-3 col-md-4 col-sm-12">Tên đăng nhập</label>
+                                                        <div class="col-lg-9 col-md-8 col-sm-12">
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control" id="username"
                                                                 placeholder="Tên đăng nhập">
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group">
-                                                        <label for="nickname" class=" col-form-label">Biệt danh</label>
-                                                        <div class="input">
-                                                            <input type="text" class="form-control" id="nickname"
+                                                    <div class="form-group row">
+                                                        <label for="nickname" class="col-form-label justify-content-end d-flex align-items-center col-lg-3 col-md-4 col-sm-12">Biệt danh</label>
+                                                        <div class="col-lg-9 col-md-8 col-sm-12">
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control" id="nickname"
                                                                 placeholder="Biệt danh">
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group text-right justify-content-end">
+                                    
+                                                    <div class="form-group text-right justify-content-end d-flex">
                                                         <button type="submit" class="btn btn-primary">Lưu</button>
                                                     </div>
                                                 </form>
@@ -344,26 +352,30 @@
                                             </ul>
                                             <div class="form-wrapper">
                                                 <form>
-                                                    <div class="form-group justify-content-between">
-                                                        <label for="phone" class="col-form-label l-required">Số di
-                                                            động</label>
-                                                        <div class="input">
-                                                            <input type="text" class="form-control" id="phone"
+                                                    <div class="form-group row">
+                                                        <label for="username" class="col-form-label justify-content-end d-flex align-items-center col-lg-3 col-md-3 col-sm-12">Số di động</label>
+                                                        <div class="col-lg-6 col-md-6 col-sm-8">
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control" id="phone"
                                                                 placeholder="Số đi động">
+                                                            </div>
                                                         </div>
-                                                        <button type="submit" class="btn btn-style-2">Gửi mã</button>
+                                                        <div class="col-lg-3 col-md-3 col-sm-4"><button type="submit" class="btn btn-custom btn-style-3">Xác minh</button></div>
                                                     </div>
-                                                    <div class="form-group justify-content-between">
-                                                        <label for="numberActive" class="col-form-label l-required">Mã
-                                                            xác
-                                                            minh</label>
-                                                        <div class="input">
-                                                            <input type="text" class="form-control" id="numberActive"
-                                                                placeholder="Mã xác minh">
+                                                    <div class="form-group row">
+                                                        <label for="username" class="col-form-label justify-content-end d-flex align-items-center col-lg-3 col-md-3 col-sm-12">Mã xác minh</label>
+                                                        <div class="col-lg-6 col-md-6 col-sm-8">
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control" id="phone"
+                                                                placeholder="Số đi động">
+                                                            </div>
                                                         </div>
-                                                        <button type="submit" class="btn btn-style-3">Xác minh</button>
+                                                        <div class="col-lg-3 col-md-3 col-sm-4">
+                                                            <button type="submit" class="btn btn-custom btn-style-2">Gửi mã</button>
+                                                        </div>
                                                     </div>
-                                                    <div class="form-group justify-content-center mb-0">
+                                                
+                                                    <div class="form-group justify-content-center d-flex mb-0">
                                                         <button type="submit" class="btn btn-style-2">Nhập lại số điện
                                                             thoại</button>
                                                     </div>
@@ -378,30 +390,39 @@
                                                 <span class="text">Mật khẩu</span>
                                             </h2>
                                             <form class="wrap">
-                                                <div class="form-group ">
-                                                    <label for="oldPass" class="col-form-label">Mật khẩu cũ</label>
-                                                    <div class="input">
-                                                        <input id="oldPass" type="password" class="form-control"
+                                                <div class="form-group row">
+                                                    <label for="oldPass" class="col-form-label justify-content-end d-flex align-items-center col-lg-3 col-md-4 col-sm-12">Mật khẩu cũ</label>
+                                                    <div class="col-lg-6 col-md-8 col-sm-9">
+                                                        <div class="input-group">
+                                                            <input id="oldPass" type="password" class="form-control"
                                                             aria-describedby="passwordHelpBlock">
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="form-group ">
-                                                    <label for="newPass" class="col-form-label">Mật khẩu mới</label>
-                                                    <div class="input">
-                                                        <input id="newPass" type="password" class="form-control"
-                                                            aria-describedby="passwordHelpBlock">
+                                                <div class="form-group row">
+                                                    <label for="newPass" class="col-form-label justify-content-end d-flex align-items-center col-lg-3 col-md-4 col-sm-12">Mật khẩu mới</label>
+                                                    <div class="col-lg-6 col-md-8 col-sm-9">
+                                                        <div class="input-group">
+                                                            <input id="newPass" type="password" class="form-control">
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="form-group ">
-                                                    <label for="renewPass" class="col-form-label">Nhập lại mật khẩu
+                                                <div class="form-group row">
+                                                    <label for="renewPass" class="col-form-label justify-content-end d-flex align-items-center col-lg-3 col-md-4 col-sm-12">Nhập lại mật khẩu
                                                         mới</label>
-                                                    <div class="input">
-                                                        <input id="renewPass" type="password" class="form-control"
+                                                    <div class="col-lg-6 col-md-8 col-sm-9">
+                                                        <div class="input-group">
+                                                            <input id="renewPass" type="password" class="form-control"
                                                             aria-describedby="passwordHelpBlock">
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="form-group text-right justify-content-end">
-                                                    <button type="submit" class="btn btn-primary">Lưu</button>
+                                                
+                                                <div class="form-group text-right row">
+                                                    <div class="col-lg-9 justify-content-end d-flex">
+                                                        <button type="submit" class="btn btn-primary">Lưu</button>
+                                                    </div>
+
                                                 </div>
                                             </form>
                                         </div>
@@ -413,30 +434,35 @@
                                                 <span class="text">Mật khẩu thanh toán</span>
                                             </h2>
                                             <form class="wrap">
-                                                <div class="form-group ">
-                                                    <label for="oldPass2" class="col-form-label">Mật khẩu cũ</label>
-                                                    <div class="input">
-                                                        <input id="oldPass2" type="password" class="form-control"
-                                                            aria-describedby="passwordHelpBlock">
+                                                <div class="form-group row">
+                                                    <label for="oldPass2" class="col-form-label justify-content-end d-flex align-items-center col-lg-3 col-md-4 col-sm-12">Mật khẩu cũ</label>
+                                                    <div class="col-lg-6 col-md-8 col-sm-9">
+                                                        <div class="input-group">
+                                                            <input id="oldPass2" type="password" class="form-control">
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="form-group ">
-                                                    <label for="newPass2" class="col-form-label">Mật khẩu mới</label>
-                                                    <div class="input">
-                                                        <input id="newPass2" type="password" class="form-control"
-                                                            aria-describedby="passwordHelpBlock">
+                                                <div class="form-group row">
+                                                    <label for="newPass2" class="col-form-label justify-content-end d-flex align-items-center col-lg-3 col-md-4 col-sm-12">Mật khẩu mới</label>
+                                                    <div class="col-lg-6 col-md-8 col-sm-9">
+                                                        <div class="input-group">
+                                                            <input id="newPass2" type="password" class="form-control">
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="form-group ">
-                                                    <label for="renewPass2" class="col-form-label">Nhập lại mật khẩu
-                                                        mới</label>
-                                                    <div class="input">
-                                                        <input id="renewPass2" type="password" class="form-control"
-                                                            aria-describedby="passwordHelpBlock">
+                                                 <div class="form-group row">
+                                                    <label for="renewPass2" class="col-form-label justify-content-end d-flex align-items-center col-lg-3 col-md-4 col-sm-12">Nhập lại mật khẩu mới</label>
+                                                    <div class="col-lg-6 col-md-8 col-sm-9">
+                                                        <div class="input-group">
+                                                            <input id="renewPass2" type="password" class="form-control">
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="form-group text-right justify-content-end">
-                                                    <button type="submit" class="btn btn-primary">Lưu</button>
+                                                <div class="form-group text-right row">
+                                                    <div class="col-lg-9 justify-content-end d-flex">
+                                                        <button type="submit" class="btn btn-primary">Lưu</button>
+                                                    </div>
+
                                                 </div>
                                             </form>
                                         </div>
@@ -448,27 +474,34 @@
                                                 <span class="text">Câu hỏi bảo mật</span>
                                             </h2>
                                             <form class="wrap">
-                                                <div class="form-group ">
-                                                    <label for="question" class="col-form-label">Chọn câu hỏi</label>
-                                                    <div class="input">
-                                                        <select class="form-select" aria-label="Default select example">
-                                                            <option selected>Chọn câu hỏi bí mật</option>
-                                                            <option value="1">One</option>
-                                                            <option value="2">Two</option>
-                                                            <option value="3">Three</option>
-                                                        </select>
+                                                
+                                                <div class="form-group row">
+                                                    <label class="col-form-label justify-content-end d-flex align-items-center col-lg-3 col-md-4 col-sm-12">Chọn câu hỏi</label>
+                                                    <div class="col-lg-6 col-md-8 col-sm-9">
+                                                        <div class="input-group">
+                                                            <select class="form-select" aria-label="Default select example">
+                                                                <option selected>Chọn câu hỏi bí mật</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="form-group ">
-                                                    <label for="answer" class="col-form-label">Nhập lại mật khẩu
-                                                        mới</label>
-                                                    <div class="input">
-                                                        <input id="answer" type="text" class="form-control"
-                                                            aria-describedby="answerHelpBlock">
+                                                <div class="form-group row">
+                                                    <label for="renewPass2" class="col-form-label justify-content-end d-flex align-items-center col-lg-3 col-md-4 col-sm-12">Nhập lại mật khẩu mới</label>
+                                                    <div class="col-lg-6 col-md-8 col-sm-9">
+                                                        <div class="input-group">
+                                                            <input id="answer" type="text" class="form-control">
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="form-group text-right justify-content-end">
-                                                    <button type="submit" class="btn btn-primary">Lưu</button>
+                                                
+                                                <div class="form-group text-right row">
+                                                    <div class="col-lg-9 justify-content-end d-flex">
+                                                        <button type="submit" class="btn btn-primary">Lưu</button>
+                                                    </div>
+
                                                 </div>
                                             </form>
                                         </div>
@@ -621,6 +654,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                
                                 <div class="tab-pane fade" id="pills-bank-account" role="tabpanel"
                                     aria-labelledby="pills-bank-account-tab" tabindex="0">
                                     <div class="bankaccount">
@@ -754,7 +788,7 @@
                                                 </table>
                                             </div>
                                             <div class="col-lg-6 form-wrapper">
-                                                <form class="wrap">
+                                                 <form class="wrap">
                                                     <div class="form-group">
                                                         <label class=" col-form-label">Tài khoản</label>
                                                         <select class="form-select form-control" aria-label="Chọn">
@@ -765,7 +799,7 @@
                                                         </select>
                                                     </div>
                                                     <div class="form-group text-center justify-content-center">
-                                                        <i class="bi bi-arrow-down-circle-fill"></i>
+                                                        <i class="bi bi-arrow-down-circle-fill fs-4"></i>
                                                     </div>
                                                     <div class="form-group">
                                                         <label class=" col-form-label">Từ tài khoản</label>
@@ -821,23 +855,37 @@
                                                 <div class="col-lg-4">
                                                     <div class="form-group">
                                                         <label class=" col-form-label">Thời gian từ</label>
-                                                        <div class='input-group date jsdate'>
-                                                            <input type='text' class="form-control" />
-                                                            <span class="input-group-addon">
-                                                                <i class="bi bi-calendar"></i>
-                                                            </span>
-                                                         </div>
+                                                        <div class="input-group date" id="datetimepickerfrom"
+                                                            data-target-input="nearest">
+                                                            
+                                                            <input type="text" class="form-control datetimepicker-input"
+                                                                data-target="#datetimepickerfrom" />
+                                                            <div class="input-group-append"
+                                                                data-target="#datetimepickerfrom"
+                                                                data-toggle="datetimepicker">
+                                                                <div class="input-group-text">
+                                                                    <i class="bi bi-calendar"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-4">
                                                     <div class="form-group">
                                                         <label class=" col-form-label">Đến</label>
-                                                        <div class='input-group date jsdate'>
-                                                            <input type='text' class="form-control" />
-                                                            <span class="input-group-addon">
-                                                                <i class="bi bi-calendar"></i>
-                                                            </span>
-                                                         </div>
+                                                        <div class="input-group date" id="datetimepickerto"
+                                                            data-target-input="nearest">
+                                                           
+                                                            <input type="text" class="form-control datetimepicker-input"
+                                                                data-target="#datetimepickerto" />
+                                                            <div class="input-group-append"
+                                                                data-target="#datetimepickerto"
+                                                                data-toggle="datetimepicker">
+                                                                <div class="input-group-text">
+                                                                    <i class="bi bi-calendar"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -855,12 +903,14 @@
                                                 </div>
                                                 <div class="col-lg-4">
                                                     <div class="form-group ">
-                                                        <label for="seriesnumber" class="col-form-label">Mã số biến động</label>
+                                                        <label for="seriesnumber" class="col-form-label">Mã số biến
+                                                            động</label>
                                                         <input type="text" class="form-control" id="seriesnumber">
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-4">
-                                                    <div class="form-group text-right justify-content-center align-items-center d-flex">
+                                                <div class="col-lg-4 d-flex justify-content-center">
+                                                    <div
+                                                        class="form-group text-right justify-content-center align-items-center d-flex mb-0">
                                                         <button type="submit" class="btn btn-style-2">Tìm kiếm</button>
                                                     </div>
                                                 </div>
@@ -871,48 +921,69 @@
                                         <table class="table table-striped table-custom-style">
                                             <thead>
                                                 <tr>
-                                                    <th scope="col">STT</th>
-                                                    <th scope="col">Tên ngân hàng</th>
-                                                    <th scope="col">Số tài khoản</th>
-                                                    <th scope="col">Ngày thêm</th>
-                                                    <th scope="col"></th>
+                                                    <th scope="col">Mã số biến động</th>
+                                                    <th scope="col">Thời gian</th>
+                                                    <th scope="col">Loại</th>
+                                                    <th scope="col">Thu nhập</th>
+                                                    <th scope="col">Chi</th>
+                                                    <th scope="col">Số dư trước</th>
+                                                    <th scope="col">Số dư sau</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <th scope="row">#234567898</th>
-                                                    <td>BIDV</td>
-                                                    <td>123456789</td>
                                                     <td>24/05/2022 12:30:40</td>
-                                                    <td><i class="bi bi-trash-fill"></i></td>
+                                                    <td>120.000.000</td>
+                                                    <td>52.000.000</td>
+                                                    <td>52.000.000</td>
+                                                    <td>52.000.000</td>
+                                                    <td>52.000.000</td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">#234567898</th>
-                                                    <td>BIDV</td>
-                                                    <td>123456789</td>
                                                     <td>24/05/2022 12:30:40</td>
-                                                    <td><i class="bi bi-trash-fill"></i></td>
+                                                    <td>120.000.000</td>
+                                                    <td>52.000.000</td>
+                                                    <td>52.000.000</td>
+                                                    <td>52.000.000</td>
+                                                    <td>52.000.000</td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">#234567898</th>
-                                                    <td>BIDV</td>
-                                                    <td>123456789</td>
                                                     <td>24/05/2022 12:30:40</td>
-                                                    <td><i class="bi bi-trash-fill"></i></td>
+                                                    <td>120.000.000</td>
+                                                    <td>52.000.000</td>
+                                                    <td>52.000.000</td>
+                                                    <td>52.000.000</td>
+                                                    <td>52.000.000</td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">#234567898</th>
-                                                    <td>BIDV</td>
-                                                    <td>123456789</td>
                                                     <td>24/05/2022 12:30:40</td>
-                                                    <td><i class="bi bi-trash-fill"></i></td>
+                                                    <td>120.000.000</td>
+                                                    <td>52.000.000</td>
+                                                    <td>52.000.000</td>
+                                                    <td>52.000.000</td>
+                                                    <td>52.000.000</td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">#234567898</th>
-                                                    <td>BIDV</td>
-                                                    <td>123456789</td>
                                                     <td>24/05/2022 12:30:40</td>
-                                                    <td><i class="bi bi-trash-fill"></i></td>
+                                                    <td>120.000.000</td>
+                                                    <td>52.000.000</td>
+                                                    <td>52.000.000</td>
+                                                    <td>52.000.000</td>
+                                                    <td>52.000.000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">#234567898</th>
+                                                    <td>24/05/2022 12:30:40</td>
+                                                    <td>120.000.000</td>
+                                                    <td>52.000.000</td>
+                                                    <td>52.000.000</td>
+                                                    <td>52.000.000</td>
+                                                    <td>52.000.000</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -1043,7 +1114,9 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Bootstrap core JS-->
+    <script src="../assets/js/moment.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/tempusdominus-bootstrap-4.min.js"></script>
     <!-- Core theme JS-->
     <script src="../assets/js/scripts.js"></script>
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
