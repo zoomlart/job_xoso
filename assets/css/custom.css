@@ -608,6 +608,12 @@ ul.menu-footer {
 /*================ THÔNG BÁO ==================*/
 .notification-page .icon_head_notification {
   background-image: url(../img/icon/icon_notification.png); }
+/*================ THÔNG BÁO ==================*/
+.napTien-info #fastPayment .nav li .nav-link.active {
+  background-color: #7740EC; }
+.napTien-info #eBank {
+  margin-top: -20px;
+  padding-top: 50px !important; }
 /*============== TABLE STYLE=================*/
 .table-custom-style thead {
   background-color: #9692EA; }

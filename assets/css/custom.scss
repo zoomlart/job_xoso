@@ -868,6 +868,29 @@ ul.menu-footer {
             background-image: url(../img/icon/icon_notification.png);
         }
 }
+/*================ THÔNG BÁO ==================*/@at-root
+.napTien-info{
+    // #fastPayment-tab{
+    //     background-image: url(../img/icon/icon_hot.png);
+    //     background-position: left center;
+    //     background-size: contain;
+    //     background-repeat: no-repeat;
+    //     background-color: #C83B0F;
+
+    // }
+    #fastPayment{
+        .nav{
+            li .nav-link.active{
+                background-color: #7740EC;
+            }
+        }
+    }
+    #eBank{
+        margin-top: -20px;
+        padding-top: 50px!important;
+    }
+}
+
 /*============== TABLE STYLE=================*/
 .table-custom-style {
     thead {

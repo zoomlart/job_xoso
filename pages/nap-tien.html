@@ -238,97 +238,178 @@
                         <section class="account-content">
                             <ul class="nav nav-pills mb-3" role="tablist">
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="register-tab" data-bs-toggle="pill"
-                                        data-bs-target="#register" type="button" role="tab" aria-controls="register"
-                                        aria-selected="true">Đăng ký thành viên</button>
+                                    <button class="nav-link active" id="napTien-tab" data-bs-toggle="pill"
+                                        data-bs-target="#napTien" type="button" role="tab" aria-controls="napTien"
+                                        aria-selected="true">Nạp tiền</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="capDuoi-tab" data-bs-toggle="pill"
-                                        data-bs-target="#capDuoi" type="button" role="tab" aria-controls="capDuoi"
-                                        aria-selected="false">Cấp dưới</button>
+                                    <button class="nav-link" id="lichSuNapTien-tab" data-bs-toggle="pill"
+                                        data-bs-target="#lichSuNapTien" type="button" role="tab"
+                                        aria-controls="lichSuNapTien" aria-selected="false">Lịch sử nạp tiền</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="lien-ket-dang-ky-tab" data-bs-toggle="pill"
-                                        data-bs-target="#lien-ket-dang-ky" type="button" role="tab"
-                                        aria-controls="lien-ket-dang-ky" aria-selected="false">Liên kết đăng ký</button>
+                                    <button class="nav-link" id="rutTien-tab" data-bs-toggle="pill"
+                                        data-bs-target="#rutTien" type="button" role="tab" aria-controls="rutTien"
+                                        aria-selected="false">Rút tiền</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="chinh-sach-dai-ly-tab" data-bs-toggle="pill"
-                                        data-bs-target="#chinh-sach-dai-ly" type="button" role="tab"
-                                        aria-controls="chinh-sach-dai-ly" aria-selected="false">Chính sách đại
-                                        lý</button>
+                                    <button class="nav-link" id="lichSuRutTien-tab" data-bs-toggle="pill"
+                                        data-bs-target="#lichSuRutTien" type="button" role="tab"
+                                        aria-controls="lichSuRutTien" aria-selected="false">Lịch sử rút tiền</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="huongDanNapTien-tab" data-bs-toggle="pill"
+                                        data-bs-target="#huongDanNapTien" type="button" role="tab"
+                                        aria-controls="huongDanNapTien" aria-selected="false">Hướng dẫn nạp
+                                        tiền</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="huongDanRutTien-tab" data-bs-toggle="pill"
+                                        data-bs-target="#huongDanRutTien" type="button" role="tab"
+                                        aria-controls="huongDanRutTien" aria-selected="false">Hướng dẫn rút
+                                        tiền</button>
                                 </li>
 
                             </ul>
                             <div class="tab-content" id="account-tabContent">
-                                <div class="tab-pane fade show active" id="register" role="tabpanel" aria-labelle
-                                    dby="register-tab" tabindex="0">
-                                    <section class="password-info mt-3 content-wrapper">
-                                        <div class="wrap">
-                                            <h2 class="heading justify-content-start">
-                                                <span class="icon icon_head_pass"></span>
-                                                <span class="text">Mật khẩu</span>
-                                            </h2>
-                                            <form class="wrap">
-                                                <div class="form-group row">
-                                                    <label for="username"
-                                                        class="col-form-label justify-content-end d-flex align-items-center col-lg-3 col-sm-12">Tên
-                                                        đăng nhập</label>
-                                                    <div class="col-lg-5 col-md-6 col-sm-12">
-                                                        <div class="input-group">
-                                                            <input id="username" type="text" class="form-control">
-                                                        </div>
-                                                    </div>
-                                                    <span
-                                                        class="col-lg-4 col-md-3 col-sm-12 justify-content-start d-flex align-items-center text-black-50">(5
-                                                        kí tự trở lên)</span>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label for="matkhau"
-                                                        class="col-form-label justify-content-end d-flex align-items-center col-lg-3 col-sm-12">Mật
-                                                        khẩu</label>
-                                                    <div class="col-lg-5 col-md-6 col-sm-12">
-                                                        <div class="input-group">
-                                                            <input id="matkhau" type="text" class="form-control">
-                                                        </div>
-                                                    </div>
-                                                    <span
-                                                        class="col-lg-4 col-md-3 col-sm-12 justify-content-start d-flex align-items-center text-black-50">(5
-                                                        kí tự trở lên)</span>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label for="nhap-lai-mk"
-                                                        class="col-form-label justify-content-end d-flex align-items-center col-lg-3 col-sm-12">(6
-                                                        ký tự trở lên)</label>
-                                                    <div class="col-lg-5 col-md-6 col-sm-12">
-                                                        <div class="input-group">
-                                                            <input id="nhap-lai-mk" type="text" class="form-control">
-                                                        </div>
-                                                    </div>
-                                                    <span
-                                                        class="col-lg-4 col-md-3 col-sm-12 justify-content-start d-flex align-items-cente text-black-50">(Giống
-                                                        với mật khẩu đã nhập)</span>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label for="bietdanh"
-                                                        class="ccol-form-label justify-content-end d-flex align-items-center col-lg-3 col-sm-12">Biệt
-                                                        danh</label>
-                                                    <div class="col-lg-5 col-md-6 col-sm-12">
-                                                        <div class="input-group">
-                                                            <input id="bietdanh" type="text" class="form-control">
-                                                        </div>
-                                                    </div>
-                                                    <span class="col-lg-4 col-md-3 col-sm-12"></span>
-                                                </div>
+                                <div class="tab-pane fade show active" id="napTien" role="tabpanel" aria-labelle
+                                    dby="napTien-tab" tabindex="0">
+                                    <section class="napTien-info mt-3 content-wrapper bg-color-gray">
+                                        <div class="row align-items-center mb-3">
+                                            <span class="col-lg-3 col-md-3 d-flex justify-content-end">Phương thức nạp
+                                                tiền</span>
+                                            <ul class="col-lg-9 col-md-9 nav nav-pills" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="fastPayment-tab"
+                                                        data-bs-toggle="pill" data-bs-target="#fastPayment"
+                                                        type="button" role="tab" aria-controls="fastPayment"
+                                                        aria-selected="true">Chuyển khoản nhanh</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="pills-send-messenger-tab"
+                                                        data-bs-toggle="pill" data-bs-target="#pills-send-messenger"
+                                                        type="button" role="tab" aria-controls="pills-send-messenger"
+                                                        aria-selected="false">Chuyển khoản ngân hàng</button>
+                                                </li>
 
-                                                <div class="form-group text-right row">
-                                                    <div class="justify-content-end d-flex justify-content-center">
-                                                        <button type="submit" class="btn btn-primary btn-style-3">Tạo
-                                                            tài khoản</button>
-                                                    </div>
+                                            </ul>
+                                        </div>
 
+                                        <div class="tab-content mt-4">
+                                            <div class="tab-pane fade show active" id="fastPayment" role="tabpanel"
+                                                aria-labelledby="fastPayment-tab" tabindex="0">
+                                                <ul class="button-group payment-option nav nav-pills justify-content-center" role="tablist">
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link active" id="eBank-tab"
+                                                            data-bs-toggle="pill" data-bs-target="#eBank" type="button"
+                                                            role="tab" aria-controls="eBank"
+                                                            aria-selected="true">Ebank</button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link" id="theCao-tab" data-bs-toggle="pill"
+                                                            data-bs-target="#theCao" type="button" role="tab"
+                                                            aria-controls="theCao" aria-selected="false">Thẻ
+                                                            cào</button>
+                                                    </li>
+
+                                                </ul>
+                                                <div id="eBank" class="tab-pane fade show active bg-white p-4 mt-n2" role="tabpanel" aria-labelledby="eBank-tab" tabindex="0">
+                                                    <p>
+                                                        Là hình thức chuyển khoản nhanh, số tiền quý khách nạp sẽ được cập nhật ngay lập tức vào tài khoản của quý khách. Để sử dụng hình thức nạp tiền này quý khách cần có tài khoản ngân hàng đã đăng ký dịch vụ internet banking và đảm bảo đủ số dư để thanh toán.
+                                                    </p>
+                                                    <ol class="mt-3">
+                                                        <li>
+                                                            Thông tin giao dịch của Quý Khách có thể được thể hiện trên tài khoản của Quý Khách sau vài phút.  
+                                                        </li>
+                                                        <li>
+                                                            Hãy lưu lại Số lệnh giao dịch/ Số bút toán của ngân hàng nhằm mục đích kiểm tra xác nhận (khi cần)
+                                                        </li>
+                                                        <li>
+                                                            Quý khách sẽ bị trừ tiền phí 14% khi nạp tiền bằng ví Momo
+                                                        </li>
+                                                    </ol>
                                                 </div>
-                                            </form>
+                                            </div>
+                                            <div class="tab-pane fade" id="pills-send-messenger" role="tabpanel"
+                                                aria-labelledby="pills-send-messenger-tab" tabindex="0">
+                                                <table class="table table-striped table-custom-style">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">STT</th>
+                                                            <th scope="col">Người gửi</th>
+                                                            <th scope="col">Tiêu đề</th>
+                                                            <th scope="col">Thời gian</th>
+                                                            <th scope="col">Lượt xem</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">#234567898</th>
+                                                            <td>Phạm Anh Tuấn</td>
+                                                            <td>Khuyến mãi hot nhân dịp 30/4 - 1/5</td>
+                                                            <td>24/05/2022 12:30:40</td>
+                                                            <td>1203</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">#234567898</th>
+                                                            <td>Phạm Anh Tuấn</td>
+                                                            <td>Khuyến mãi hot nhân dịp 30/4 - 1/5</td>
+                                                            <td>24/05/2022 12:30:40</td>
+                                                            <td>1203</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">#234567898</th>
+                                                            <td>Phạm Anh Tuấn</td>
+                                                            <td>Khuyến mãi hot nhân dịp 30/4 - 1/5</td>
+                                                            <td>24/05/2022 12:30:40</td>
+                                                            <td>1203</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">#234567898</th>
+                                                            <td>Phạm Anh Tuấn</td>
+                                                            <td>Khuyến mãi hot nhân dịp 30/4 - 1/5</td>
+                                                            <td>24/05/2022 12:30:40</td>
+                                                            <td>1203</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="tab-pane fade" id="pills-invites" role="tabpanel"
+                                                aria-labelledby="pills-invites-tab" tabindex="0">
+                                                <div class="row">
+                                                    <div class="col-lg-8">
+                                                        <form class="wrap">
+                                                            <div class="form-group ">
+                                                                <label for="mailto" class="col-form-label">Người
+                                                                    nhận</label>
+                                                                <div class="input">
+                                                                    <input type="text" class="form-control" id="mailto">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="mailtitle" class=" col-form-label">Biệt
+                                                                    danh</label>
+                                                                <div class="input">
+                                                                    <input type="text" class="form-control"
+                                                                        id="mailtitle">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group textarea">
+                                                                <label for="mailcontent" class=" col-form-label">Biệt
+                                                                    danh</label>
+                                                                <div class="input">
+                                                                    <textarea rows="3" type="text" class="form-control"
+                                                                        id="mailcontent"></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group text-right justify-content-end">
+                                                                <button type="submit"
+                                                                    class="btn btn-primary">Lưu</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </section>
 
