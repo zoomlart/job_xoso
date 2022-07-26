@@ -427,175 +427,188 @@ ul.menu-footer {
   border-radius: 6px; }
 
 /*-=================ACCOUNT PAGE +==================*/
-.acccout-page .categories-list a.active, .acccout-page .categories-list a:hover {
-  background-color: #FEC36B;
-  color: #3B3B3B !important; }
-  .acccout-page .categories-list a.active .icon, .acccout-page .categories-list a:hover .icon {
-    filter: invert(0) sepia(0) saturate(0) hue-rotate(0) brightness(0) contrast(80%); }
-.acccout-page .categories-list a .icon.icon_cat_account_02 {
-  background-image: url(../img/icon/icon_cat_accout-03.png); }
-.acccout-page .categories-list a .icon.icon_cat_au_02 {
-  background-image: url(../img/icon/icon_cat_au_02.png); }
-.acccout-page .categories-list a .icon.icon_cat_history {
-  background-image: url(../img/icon/icon_cat_history.png); }
-.acccout-page .categories-list a .icon.icon_cat_notification {
-  background-image: url(../img/icon/icon_cat_notification.png); }
-.acccout-page .categories-list a .icon.icon_cat_wallet {
-  background-image: url(../img/icon/icon_cat_wallet.png); }
-.acccout-page .categories-list a .icon.icon_cat_faq {
-  background-image: url(../img/icon/icon_cat_faq.png); }
-.acccout-page .account-content .nav .nav-item {
-  margin-right: 10px; }
-  .acccout-page .account-content .nav .nav-item button {
-    background-color: #434953;
-    color: #c8c8c8; }
-    .acccout-page .account-content .nav .nav-item button.active, .acccout-page .account-content .nav .nav-item button:hover {
-      background-color: #F36242;
-      color: #fff; }
-    .acccout-page .account-content .nav .nav-item button#pills-messenger-tab {
-      display: flex;
-      align-items: center; }
-      .acccout-page .account-content .nav .nav-item button#pills-messenger-tab.active span {
-        background-color: #000; }
-      .acccout-page .account-content .nav .nav-item button#pills-messenger-tab span {
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        margin-left: 5px;
-        background-color: #F91818;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 14px;
-        line-height: 1; }
-.acccout-page .account-content .tab-content .content-wrapper {
-  padding: 20px;
-  border-radius: 6px; }
-.acccout-page .account-content .tab-content section {
-  border-radius: 6px; }
-.acccout-page .account-content .tab-content #pills-messenger {
-  padding: 20px;
-  background-color: #F2F1FE;
-  border-radius: 6px; }
-  .acccout-page .account-content .tab-content #pills-messenger .nav-item button {
-    background: #EAE9FF;
-    border: 1px solid #7E8590;
-    padding: 6px 20px;
-    color: #515966; }
-    .acccout-page .account-content .tab-content #pills-messenger .nav-item button.active, .acccout-page .account-content .tab-content #pills-messenger .nav-item button:hover {
-      background-color: #7740EC;
-      color: #fff; }
-.acccout-page .account-content .tab-content #pills-transfer-money .table-custom-style {
-  background-color: #fff; }
-  .acccout-page .account-content .tab-content #pills-transfer-money .table-custom-style thead {
-    background-color: #5B54E1; }
-    .acccout-page .account-content .tab-content #pills-transfer-money .table-custom-style thead th {
-      border-right: 1px solid; }
-      .acccout-page .account-content .tab-content #pills-transfer-money .table-custom-style thead th:last-child {
-        border: 0 none; }
-  .acccout-page .account-content .tab-content #pills-transfer-money .table-custom-style tbody tr td {
-    border: 1px solid #D9D9D9;
-    background-color: white !important;
-    vertical-align: middle; }
-    .acccout-page .account-content .tab-content #pills-transfer-money .table-custom-style tbody tr td .icon-reload {
-      font-size: 20px;
-      color: #202020; }
-      .acccout-page .account-content .tab-content #pills-transfer-money .table-custom-style tbody tr td .icon-reload:hover {
-        color: #5B54E1; }
-.acccout-page .account-content .tab-content #pills-transfer-money .form-group .label-red {
-  color: red;
-  margin-bottom: 20px; }
-.acccout-page .account-content .tab-content #pills-history .jsdate {
-  position: relative; }
-  .acccout-page .account-content .tab-content #pills-history .jsdate .input-group-addon {
-    position: absolute; }
-.acccout-page .account-content .tab-content .account-detail {
-  background-color: #EAE9FF;
-  padding: 20px; }
-.acccout-page .account-content .tab-content .bankaccount .content-head {
-  padding: 20px;
-  border-radius: 6px; }
-  .acccout-page .account-content .tab-content .bankaccount .content-head .content-img {
-    margin-right: 30px; }
-.acccout-page .account-content .tab-content .bankaccount .list-bank-account {
-  padding: 20px;
-  border-radius: 6px; }
-.acccout-page .account-content .tab-content .avatar__change {
-  text-align: center; }
-  .acccout-page .account-content .tab-content .avatar__change .avatar-img {
-    border-radius: 50%;
-    position: relative;
-    display: flex;
-    justify-content: center; }
-    .acccout-page .account-content .tab-content .avatar__change .avatar-img img {
-      max-width: 120px; }
-    .acccout-page .account-content .tab-content .avatar__change .avatar-img .icon_camera {
-      background-image: url(../img/icon/icon_camera.png);
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 40px;
-      height: 40px;
-      display: block;
-      border-radius: 50%;
-      background-color: #fff;
-      position: absolute;
-      bottom: 0; }
-  .acccout-page .account-content .tab-content .avatar__change .note {
-    font-size: 14px;
-    margin: 15px;
-    color: #545454; }
-  .acccout-page .account-content .tab-content .avatar__change .btn {
-    background: linear-gradient(180deg, #20E486 0%, #0C9C46 100%);
-    border: 0 none;
-    color: #fff;
-    padding: 10px 40px; }
-.acccout-page .account-content .tab-content .heading {
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  line-height: 1.25;
-  justify-content: center;
-  margin-bottom: 30px; }
-  .acccout-page .account-content .tab-content .heading .icon {
-    width: 32px;
-    height: 32px;
-    display: block;
-    background-position: center;
-    background-size: 32px;
+.acccout-page {
+  /*=============== STYLE PAGINATION =================*/ }
+  .acccout-page .categories-list a.active, .acccout-page .categories-list a:hover {
+    background-color: #FEC36B;
+    color: #3B3B3B !important; }
+    .acccout-page .categories-list a.active .icon, .acccout-page .categories-list a:hover .icon {
+      filter: invert(0) sepia(0) saturate(0) hue-rotate(0) brightness(0) contrast(80%); }
+  .acccout-page .categories-list a .icon.icon_cat_account_02 {
+    background-image: url(../img/icon/icon_cat_accout-03.png); }
+  .acccout-page .categories-list a .icon.icon_cat_au_02 {
+    background-image: url(../img/icon/icon_cat_au_02.png); }
+  .acccout-page .categories-list a .icon.icon_cat_history {
+    background-image: url(../img/icon/icon_cat_history.png); }
+  .acccout-page .categories-list a .icon.icon_cat_notification {
+    background-image: url(../img/icon/icon_cat_notification.png); }
+  .acccout-page .categories-list a .icon.icon_cat_wallet {
+    background-image: url(../img/icon/icon_cat_wallet.png); }
+  .acccout-page .categories-list a .icon.icon_cat_faq {
+    background-image: url(../img/icon/icon_cat_faq.png); }
+  .acccout-page .account-content .nav .nav-item {
     margin-right: 10px; }
-    .acccout-page .account-content .tab-content .heading .icon.icon_account {
-      background-image: url(../img/icon/icon_head_account.png); }
-    .acccout-page .account-content .tab-content .heading .icon.icon_nickname {
-      background-image: url(../img/icon_nickname.png); }
-.acccout-page .account-content .tab-content .phone-info {
-  margin-top: 10px;
-  padding: 30px;
-  background-color: #F2F1FE; }
-  .acccout-page .account-content .tab-content .phone-info .icon_head_phone {
-    background-image: url(../img/icon/icon_head_phone.png); }
-  .acccout-page .account-content .tab-content .phone-info .form-wrapper {
-    margin-top: 30px; }
-  .acccout-page .account-content .tab-content .phone-info .form-group button.btn-custom {
-    width: 170px;
-    padding: 6px 30px; }
-  .acccout-page .account-content .tab-content .phone-info .form-group .input {
-    width: calc(100% - 330px); }
-.acccout-page .account-content .tab-content .password-info {
-  background-color: #EAE9FF;
-  padding: 30px; }
-  .acccout-page .account-content .tab-content .password-info .icon_head_pass {
-    background-image: url(../img/icon/icon_head_pass.png); }
-.acccout-page .account-content .tab-content .password-payment {
-  padding: 30px;
-  background-color: #F2F1FE; }
-  .acccout-page .account-content .tab-content .password-payment .icon_head_wallet {
-    background-image: url(../img/icon/icon_head_wallet.png); }
-.acccout-page .account-content .tab-content .faq-section {
-  background-color: #EAE9FF;
-  padding: 30px; }
-  .acccout-page .account-content .tab-content .faq-section .icon_head_faq {
-    background-image: url(../img/icon/icon_head_faq.png); }
+    .acccout-page .account-content .nav .nav-item:last-child {
+      margin-right: 0; }
+    .acccout-page .account-content .nav .nav-item button {
+      background-color: #434953;
+      color: #c8c8c8;
+      margin: 6px 0; }
+      .acccout-page .account-content .nav .nav-item button.active, .acccout-page .account-content .nav .nav-item button:hover {
+        background-color: #F36242;
+        color: #fff; }
+      .acccout-page .account-content .nav .nav-item button#pills-messenger-tab {
+        display: flex;
+        align-items: center; }
+        .acccout-page .account-content .nav .nav-item button#pills-messenger-tab.active span {
+          background-color: #000; }
+        .acccout-page .account-content .nav .nav-item button#pills-messenger-tab span {
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          margin-left: 5px;
+          background-color: #F91818;
+          color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 14px;
+          line-height: 1; }
+  .acccout-page .account-content .tab-content .content-wrapper {
+    padding: 20px;
+    border-radius: 6px; }
+  .acccout-page .account-content .tab-content section {
+    border-radius: 6px; }
+  .acccout-page .account-content .tab-content #pills-messenger {
+    padding: 20px;
+    background-color: #F2F1FE;
+    border-radius: 6px; }
+    .acccout-page .account-content .tab-content #pills-messenger .nav-item button {
+      background: #EAE9FF;
+      border: 1px solid #7E8590;
+      padding: 6px 20px;
+      color: #515966; }
+      .acccout-page .account-content .tab-content #pills-messenger .nav-item button.active, .acccout-page .account-content .tab-content #pills-messenger .nav-item button:hover {
+        background-color: #7740EC;
+        color: #fff; }
+  .acccout-page .account-content .tab-content #pills-transfer-money .table-custom-style {
+    background-color: #fff; }
+    .acccout-page .account-content .tab-content #pills-transfer-money .table-custom-style thead {
+      background-color: #5B54E1; }
+      .acccout-page .account-content .tab-content #pills-transfer-money .table-custom-style thead th {
+        border-right: 1px solid; }
+        .acccout-page .account-content .tab-content #pills-transfer-money .table-custom-style thead th:last-child {
+          border: 0 none; }
+    .acccout-page .account-content .tab-content #pills-transfer-money .table-custom-style tbody tr td {
+      border: 1px solid #D9D9D9;
+      background-color: white !important;
+      vertical-align: middle; }
+      .acccout-page .account-content .tab-content #pills-transfer-money .table-custom-style tbody tr td .icon-reload {
+        font-size: 20px;
+        color: #202020; }
+        .acccout-page .account-content .tab-content #pills-transfer-money .table-custom-style tbody tr td .icon-reload:hover {
+          color: #5B54E1; }
+  .acccout-page .account-content .tab-content #pills-transfer-money .form-group .label-red {
+    color: red;
+    margin-bottom: 20px; }
+  .acccout-page .account-content .tab-content #pills-history .jsdate {
+    position: relative; }
+    .acccout-page .account-content .tab-content #pills-history .jsdate .input-group-addon {
+      position: absolute; }
+  .acccout-page .account-content .tab-content .account-detail {
+    background-color: #EAE9FF;
+    padding: 20px; }
+  .acccout-page .account-content .tab-content .bankaccount .content-head {
+    padding: 20px;
+    border-radius: 6px; }
+    .acccout-page .account-content .tab-content .bankaccount .content-head .content-img {
+      margin-right: 30px; }
+  .acccout-page .account-content .tab-content .bankaccount .list-bank-account {
+    padding: 20px;
+    border-radius: 6px; }
+  .acccout-page .account-content .tab-content .avatar__change {
+    text-align: center; }
+    .acccout-page .account-content .tab-content .avatar__change .avatar-img {
+      border-radius: 50%;
+      position: relative;
+      display: flex;
+      justify-content: center; }
+      .acccout-page .account-content .tab-content .avatar__change .avatar-img img {
+        max-width: 120px; }
+      .acccout-page .account-content .tab-content .avatar__change .avatar-img .icon_camera {
+        background-image: url(../img/icon/icon_camera.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 40px;
+        height: 40px;
+        display: block;
+        border-radius: 50%;
+        background-color: #fff;
+        position: absolute;
+        bottom: 0; }
+    .acccout-page .account-content .tab-content .avatar__change .note {
+      font-size: 14px;
+      margin: 15px;
+      color: #545454; }
+    .acccout-page .account-content .tab-content .avatar__change .btn {
+      background: linear-gradient(180deg, #20E486 0%, #0C9C46 100%);
+      border: 0 none;
+      color: #fff;
+      padding: 10px 40px; }
+  .acccout-page .account-content .tab-content .heading {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    line-height: 1.25;
+    justify-content: center;
+    margin-bottom: 30px; }
+    .acccout-page .account-content .tab-content .heading .icon {
+      width: 32px;
+      height: 32px;
+      display: block;
+      background-position: center;
+      background-size: 32px;
+      margin-right: 10px; }
+      .acccout-page .account-content .tab-content .heading .icon.icon_account {
+        background-image: url(../img/icon/icon_head_account.png); }
+      .acccout-page .account-content .tab-content .heading .icon.icon_nickname {
+        background-image: url(../img/icon_nickname.png); }
+  .acccout-page .account-content .tab-content .phone-info {
+    margin-top: 10px;
+    background-color: #F2F1FE; }
+    .acccout-page .account-content .tab-content .phone-info .icon_head_phone {
+      background-image: url(../img/icon/icon_head_phone.png); }
+    .acccout-page .account-content .tab-content .phone-info .form-wrapper {
+      margin-top: 30px; }
+    .acccout-page .account-content .tab-content .phone-info .form-group button.btn-custom {
+      width: 170px;
+      padding: 6px 30px; }
+    @media (max-width: 568px) {
+      .acccout-page .account-content .tab-content .phone-info .form-group .col-xs {
+        width: 50%; } }
+  .acccout-page .account-content .tab-content .password-info {
+    background-color: #EAE9FF; }
+    .acccout-page .account-content .tab-content .password-info .icon_head_pass {
+      background-image: url(../img/icon/icon_head_pass.png); }
+  .acccout-page .account-content .tab-content .password-payment {
+    background-color: #F2F1FE; }
+    .acccout-page .account-content .tab-content .password-payment .icon_head_wallet {
+      background-image: url(../img/icon/icon_head_wallet.png); }
+  .acccout-page .account-content .tab-content .faq-section {
+    background-color: #EAE9FF; }
+    .acccout-page .account-content .tab-content .faq-section .icon_head_faq {
+      background-image: url(../img/icon/icon_head_faq.png); }
+  .pagination .page-item {
+    margin: 0 5px; }
+    .pagination .page-item .page-link {
+      border-radius: 4px;
+      min-width: 36px;
+      height: 36px;
+      text-align: center; }
+      .pagination .page-item .page-link:hover, .pagination .page-item .page-link.active {
+        background-color: #506FDF;
+        color: #fff;
+        border-color: #506FDF; }
 
 .categories-list2 li {
   margin-bottom: 20px; }
@@ -622,9 +635,20 @@ ul.menu-footer {
     font-weight: 500; }
 .table-custom-style tbody tr {
   color: #4B4B4B; }
+  .table-custom-style tbody tr td, .table-custom-style tbody tr th {
+    border: 1px solid #f8f8f8; }
   .table-custom-style tbody tr:nth-child(odd) th,
   .table-custom-style tbody tr:nth-child(odd) td {
-    background-color: #DFDDFC; }
+    background-color: #DFDDFC;
+    box-shadow: none; }
+
+#messengerModal .table-custom-style tbody tr {
+  color: #4B4B4B; }
+  #messengerModal .table-custom-style tbody tr td {
+    border: 1px solid #e1e2e3;
+    background-color: transparent; }
+    #messengerModal .table-custom-style tbody tr td:nth-child(1) {
+      min-width: 140px; }
 
 .user__auth {
   background-color: #232157; }
@@ -799,11 +823,9 @@ ul.menu-footer {
     font-size: 28px;
     text-transform: uppercase;
     padding: 10px 30px; }
-  .register-page .content-wrapper .form-wrap {
-    padding: 30px; }
-    .register-page .content-wrapper .form-wrap form {
-      max-width: 560px;
-      margin: auto; }
+  .register-page .content-wrapper .form-wrap form {
+    max-width: 560px;
+    margin: auto; }
 
 /*======================= FORM CUSTOM ===========================*/
 .form-group {
@@ -921,9 +943,6 @@ ul.menu-footer {
 
   .category-block .category-item {
     width: 50%; }
-
-  .main > .container {
-    padding: 0; }
 
   .ket-qua-xo-so .wrapper:before {
     content: none; }
