@@ -116,6 +116,11 @@ header.bg-light.slide-top {
         color: #fff;
     }
 } 
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 /*================= MAIN ===================*/
 .main>.container {
     @include MediaQuery($laptop) {
@@ -322,8 +327,8 @@ span.icon.arrows {
 
 footer {
     background-color: #241D53;
+    margin-top: auto;
 }
-
 .main-footer {
     padding: 78px 0;
 }
@@ -677,14 +682,12 @@ ul.menu-footer {
                     filter: invert(0) sepia(0) saturate(0) hue-rotate(0) brightness(0) contrast(80%);
                 }
             }
-
             .icon {
                 &.icon_cat_account_02 {
-                    background-image: url(../img/icon/icon_cat_accout-03.png);
+                    background-image: url(../img/icon/icon_cat_user-02.png);
                 }
-
                 &.icon_cat_au_02 {
-                    background-image: url(../img/icon/icon_cat_au_02.png);
+                    background-image: url(../img/icon/icon_cat_accout-03.png);
                 }
 
                 &.icon_cat_history {
@@ -701,6 +704,13 @@ ul.menu-footer {
 
                 &.icon_cat_faq {
                     background-image: url(../img/icon/icon_cat_faq.png);
+                }
+                &.icon_cat_report {
+                    background-image: url(../img/icon/icon_cat_report.png);
+                }
+
+                &.icon_cat_cup {
+                    background-image: url(../img/icon/icon_cat_cup.png);
                 }
             }
         }
