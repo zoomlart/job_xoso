@@ -457,6 +457,21 @@ ul.menu-footer {
       color: #0C9C46; }
       .list-width-item .item i.danger {
         color: red; }
+.hot-partern {
+  padding-left: 50px;
+  position: relative; }
+  .hot-partern::before {
+    content: "";
+    background-image: url(../img/icon_hot.png) !important;
+    background-position: center left !important;
+    background-repeat: no-repeat !important;
+    width: 60px;
+    height: 20px;
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%); }
+
 /*================== SECURITY POPUP ================*/
 #securityModal .form-group .input-group {
   justify-content: center; }
@@ -943,6 +958,27 @@ ul.menu-footer {
     align-items: flex-start; }
     .form-group.textarea .form-control {
       min-height: 160px; }
+
+/* ======================= NAP TIEN ===========================*/
+@media (max-width: 568px) {
+  .brand-payment .list-item li.item {
+    width: 33.3333%; } }
+.brand-payment .list-item .form-check {
+  position: relative; }
+  .brand-payment .list-item .form-check::before {
+    content: "";
+    width: 95px;
+    height: 95px;
+    background-image: url(../img/icon/icon_hot2.png);
+    background-position: center;
+    top: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -60px); }
+  .brand-payment .list-item .form-check .form-check-input {
+    width: 20px;
+    height: 20px;
+    margin-top: 20px; }
 
 /* ======================= FORM LOGIN ===========================*/
 @media (max-width: 991px) {
