@@ -285,15 +285,13 @@
                                     <section class="napTien-info mt-3 content-wrapper bg-color-gray">
                                         <div class="row align-items-center mb-3">
                                             <span
-                                                class="col-lg-3 col-md-3 d-flex justify-content-center justify-content-lg-end justify-content-md-end justify-content-sm-center justify-content-sm-center pe-4">Phương
-                                                thức nạp
-                                                tiền</span>
+                                                class="col-lg-3 col-md-3 d-flex justify-content-center justify-content-lg-end justify-content-md-end justify-content-sm-center justify-content-sm-center pe-4">Phương thức nạp tiền</span>
                                             <ul class="col-lg-9 col-md-9 nav nav-pills method-deposit justify-content-center justify-content-lg-start justify-content-md-start justify-content-sm-center"
                                                 role="tablist">
                                                 <li class="nav-item" role="presentation">
-                                                    <button class="hot-partern nav-link active" id="fastPayment-tab"
-                                                        data-bs-toggle="pill" data-bs-target="#fastPayment"
-                                                        type="button" role="tab" aria-controls="fastPayment"
+                                                    <button class="hot-partern nav-link active" id="momo-payment-tab"
+                                                        data-bs-toggle="pill" data-bs-target="#momo-payment"
+                                                        type="button" role="tab" aria-controls="momo-payment"
                                                         aria-selected="true">Chuyển khoản nhanh</button>
                                                 </li>
                                                 <li class="nav-item" role="presentation">
@@ -307,111 +305,94 @@
                                         </div>
 
                                         <div class="tab-content mt-4">
-                                            <div class="tab-pane fade show active" id="fastPayment" role="tabpanel"
+                                            <div class="tab-pane fade show active  d-flex justify-content-center" id="momo-payment" role="tabpanel"
                                                 aria-labelledby="fastPayment-tab" tabindex="0">
-                                                <ul class="button-group payment-option nav nav-pills justify-content-center"
-                                                    role="tablist">
-                                                    <li class="nav-item" role="presentation">
-                                                        <button class="nav-link active" id="eBank-tab"
-                                                            data-bs-toggle="pill" data-bs-target="#eBank" type="button"
-                                                            role="tab" aria-controls="eBank"
-                                                            aria-selected="true">Ebank</button>
-                                                    </li>
-                                                    <li class="nav-item" role="presentation">
-                                                        <button class="nav-link" id="theCao-tab" data-bs-toggle="pill"
-                                                            data-bs-target="#theCao" type="button" role="tab"
-                                                            aria-controls="theCao" aria-selected="false">Thẻ
-                                                            cào</button>
-                                                    </li>
-
-                                                </ul>
-                                                <div id="eBank" class="tab-pane fade show active mt-n2" role="tabpanel"
-                                                    aria-labelledby="eBank-tab" tabindex="0">
-                                                    <div class="brand-payment  bg-white p-4">
-                                                        <p class="text-center mb-4">Vui lòng chọn phương thức thanh toán
-                                                        </p>
-                                                        <ul class="list-item d-flex justify-content-center nav pt-4">
-                                                            <li class="item">
-                                                                <div
-                                                                    class="form-check d-flex flex-column justify-content-center align-items-center px-3">
-                                                                    <label class="form-check-label" for="flexCheckCard">
-                                                                        <img class="img-fluid"
-                                                                            src="../assets/img/icon/logo_thecao.png"
-                                                                            alt="Thẻ Cào">
-                                                                    </label>
-                                                                    <input class="form-check-input m-0 mt-2"
-                                                                        type="checkbox" value="" id="flexCheckCard">
-                                                                </div>
-                                                            </li>
-                                                            <li class="item">
-                                                                <div
-                                                                    class="form-check d-flex flex-column justify-content-center align-items-center px-3">
-                                                                    <label class="form-check-label" for="flexCheckMomo">
-                                                                        <img class="img-fluid"
-                                                                            src="../assets/img/icon/logo_momo.png"
-                                                                            alt="Momo">
-                                                                    </label>
-                                                                    <input class="form-check-input m-0 mt-2"
-                                                                        type="checkbox" value="" id="flexCheckMomo">
-                                                                </div>
-                                                            </li>
-                                                            <li class="item">
-                                                                <div
-                                                                    class="form-check d-flex flex-column justify-content-center align-items-center px-3">
-                                                                    <label class="form-check-label" for="flexCheckPw">
-                                                                        <img class="img-fluid"
-                                                                            src="../assets/img/icon/logo_pw.png"
-                                                                            alt="Pw">
-                                                                    </label>
-                                                                    <input class="form-check-input m-0 mt-2"
-                                                                        type="checkbox" value="" id="flexCheckPw">
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="content-rules bg-white mt-4 p-4">
-                                                        <h4 class="title-heading text-center mb-3">Thể lệ <i
-                                                                class="bi bi-info-circle-fill"></i></h4>
-                                                        <div class="content">
-                                                            <h5>EBANK</h5>
-                                                            <p>Là hình thức chuyển khoản nhanh, số tiền quý khách nạp sẽ được cập
-                                                                nhật
-                                                                ngay lập tức vào tài khoản của quý khách. Để sử dụng hình thức nạp
-                                                                tiền này quý khách cần có tài khoản ngân hàng đã đăng ký dịch vụ
-                                                                internet banking và đảm bảo đủ số dư để thanh toán</p>
-                                                            <ol class="mt-3">
-                                                                <li>
-                                                                    Thông tin giao dịch của Quý Khách có thể được thể hiện trên tài
-                                                                    khoản của Quý Khách sau vài phút.
-                                                                </li>
-                                                                <li>
-                                                                    Hãy lưu lại Số lệnh giao dịch/ Số bút toán của ngân hàng
-                                                                    nhằm mục đích kiểm tra xác nhận (khi cần)
-                                                                </li>
-                                                                <li>
-                                                                    Quý khách sẽ bị trừ tiền phí 14% khi nạp tiền bằng ví Momo
-                                                                </li>
-                                                            </ol>
-                                                            <h5>THẺ CÀO</h5>
-                                                            <p>Là hình thức nạp tiền nhanh qua thẻ cào điện thoại Viettel, Vinaphone
-                                                                và Mobifone phổ biến hiện nay với các mệnh giá 10.000 VNĐ, 20.000
-                                                                VNĐ, 50.000 VNĐ, 100.000 VNĐ, 200.000 VNĐ, 500.000 VNĐ và tối đa
-                                                                1.000.000 VNĐ.</p>
-            
-                                                            <p>Quý khách vui lòng lưu ý:</p>
-                                                            <p>Nhập đúng mệnh giá và số seri thẻ để tránh thẻ cào bị khoá do nhập
-                                                                sai
-                                                                nhiều lần.
-                                                                Không spam thẻ đã sử dụng.
-                                                                Phí sử dụng thẻ từ 10/3 sẽ là : Viettel 35%, Vinaphone 34% và
-                                                                Mobifone
-                                                                39%
-                                                                Đặc biệt: Vui lòng giữ cung cấp hình ảnh rõ nét hình ảnh thẻ đã nạp
-                                                                trong trường hợp nạp tiền không lên
-                                                                điểm để được kiểm tra và xử lý nhanh nhất. Xin cảm ơn!</p>
+                                               
+                                                <form class="wrap d-flex justify-content-center bg-white flex-column col-lg-6 col-md-6 p-4">
+                                                    <div class="d-flex justify-content-center"><img class="img-fluid" src="../assets/img/icon/logo_momo2.png" alt="momo"/></div>
+                                                    <p class="text-center mt-3">
+                                                        Tên người dùng: 
+                                                        <b style="color: #F42222">User1234</b>
+                                                    </p>
+                                                    <div class="form-group">
+                                                        <div class="input-group">
+                                                            <input id="soTien" type="text" class="form-control" placeholder="Số tiền">
                                                         </div>
                                                     </div>
-                                                </div>
+                                                    <p class="text-center">Tối thiểu <b style="color: #FF8A1F">200.000</b>/ Tối đa <b style="color: #FF8A1F">50.000 VNĐ</b></p>
+                                                    <ul class="list-item d-flex justify-content-center nav">
+                                                        <li class="item">
+                                                            <div class="form-check">
+                                                                
+                                                                <input id="200k" class="form-check-input visually-hidden"
+                                                                    type="radio" value="200k" name="exampleRadios">
+                                                                    <label class="form-check-label" for="200k">200k</label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="item">
+                                                            <div class="form-check">
+                                                                
+                                                                <input id="500k" class="form-check-input visually-hidden"
+                                                                    type="radio" value="500k" name="exampleRadios">
+                                                                    <label class="form-check-label" for="500k">500k</label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="item">
+                                                            <div class="form-check">
+                                                                
+                                                                <input id="800k" class="form-check-input visually-hidden"
+                                                                    type="radio" value="800k" name="exampleRadios">
+                                                                    <label class="form-check-label" for="800k">800k</label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="item">
+                                                            <div class="form-check">
+                                                                
+                                                                <input id="1M" class="form-check-input visually-hidden"
+                                                                    type="radio" value="1M" name="exampleRadios">
+                                                                    <label class="form-check-label" for="1M">1M</label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="item">
+                                                            <div class="form-check">
+                                                                
+                                                                <input id="2M" class="form-check-input visually-hidden"
+                                                                    type="radio" value="2M" name="exampleRadios">
+                                                                    <label class="form-check-label" for="2M">2M</label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="item">
+                                                            <div class="form-check">
+                                                                
+                                                                <input id="3M" class="form-check-input visually-hidden"
+                                                                    type="radio" value="3M" name="exampleRadios">
+                                                                    <label class="form-check-label" for="3M">3M</label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="item">
+                                                            <div class="form-check">
+                                                                
+                                                                <input id="5M" class="form-check-input visually-hidden"
+                                                                    type="radio" value="5M" name="exampleRadios">
+                                                                    <label class="form-check-label" for="5M">5M</label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="item">
+                                                            <div class="form-check">
+                                                                
+                                                                <input id="10M" class="form-check-input visually-hidden"
+                                                                    type="radio" value="10M" name="exampleRadios">
+                                                                    <label class="form-check-label" for="10M">10M</label>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="text-center"><button class="btn btn-default btn-style-3 mt-4">Gửi đi</button></div>
+                                                    <p class="mt-3 text-center">
+                                                        Lưu ý: Quý khách vui lòng nạp đúng số tiền đã chọnm nếu nạp sai tài khoản chơi của Quý khách sẽ không được tính điểm <br/>Quý khách sẽ bị trừ tiền phí 14% khi nạp tiền bằng ví MOMO<span  style="color: #FF8A1F">(Số tiền nạp thực tế = Tiền nạp - phí)</span>
+                                                    </p>
+                                                </form>
+                                                
+
                                             </div>
                                             <div class="tab-pane fade" id="banks-transfer" role="tabpanel"
                                                 aria-labelledby="pills-send-messenger-tab" tabindex="0">
@@ -449,14 +430,7 @@
                                         </div>
                                         
                                     </section>
-                                    <div class="button-action row align-items-center mt-4">
-                                        <span class="col-lg-4 col-md-4 d-flex justify-content-center  pe-4">Thời gian xử
-                                            lý: <b style="color: #EE5919">5 Phút</b></span>
-                                        <div class="col-lg-4 col-md-4 d-flex justify-content-center">
-                                            <button class="px-4 btn btn-default btn-style-3 py-2"
-                                                id="deposit-button">Nạp tiền</button>
-                                        </div>
-                                    </div>
+                                   
                                 </div>
                                 <div class="tab-pane fade" id="lichSuNapTien" role="tabpanel"
                                     aria-labelledby="lichSuNapTien-tab" tabindex="0">

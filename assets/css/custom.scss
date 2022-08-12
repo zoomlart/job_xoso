@@ -10,7 +10,9 @@ $sm: 568px;
         @content;
     }
 }
-
+.btn{
+    border-width: 0;
+}
 .bg-color-gray {
     background-color: #EAE9FF;
 }
@@ -1074,11 +1076,22 @@ ul.menu-footer {
     }
 
     #eBank {
-        margin-top: -20px;
-        padding-top: 50px !important;
+        .brand-payment{
+            margin-top: -20px;
+             padding-top: 30px !important;
+            .list-item{
+                margin-top: 30px;
+            
+            }
+        }
+    }
+    .content-rules{
+        .title-heading{
+            color: rgba(234, 90, 21, 1);
+        }
+
     }
 }
-
 /*============== TABLE STYLE=================*/
 .table-custom-style {
     thead {
@@ -1497,29 +1510,108 @@ ul.menu-footer {
                 width: 33.3333%;
             }
         }
-        
-        .form-check{
-            position: relative;
-            &::before {
-                content: "";
-                width: 95px;
-                height: 95px;
-                background-image: url(../img/icon/icon_hot2.png);
-                background-position: center;
-                top: 0;
-                position: absolute;
-                left: 50%;
-                transform: translate(-50%, -60px);
-            }
-            .form-check-input{
-                width: 20px;
-                height: 20px;
-                margin-top: 20px;
-            }
-
+    }
+    .form-check{
+        position: relative;
+        &::before {
+            content: "";
+            width: 95px;
+            height: 95px;
+            background-image: url(../img/icon/icon_hot2.png);
+            background-position: center;
+            top: 0;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -60px);
+        }
+        .form-check-input{
+            width: 20px;
+            height: 20px;
+            margin-top: 20px;
         }
     }
 }
+#banks-transfer {
+    .auto-bank{
+        @include MediaQuery($sm){
+            flex-direction: column;
+        }
+
+        .form-check{
+            min-width: 160px;
+        }
+        .content{
+            padding-left: 30px
+        }
+    }
+}
+.payment-methods{
+    .list-item{
+        .item{
+            width: 25%;
+            padding: 2px;
+            .form-check{
+                padding: 0;
+                margin: 0;
+            }
+            .form-check-label{
+                background-color: #EAE9FF;
+                height: 50px;
+                text-align: center;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                border-radius: 6px;
+            }
+            .form-check-input:checked + .form-check-label{
+                background-color: #F38547;
+                color: #fff;
+                background-image: url(../img/icon/partent_button.png);
+                background-repeat: no-repeat;
+                background-position: bottom right;
+            }
+            
+        }
+        &.list-card{
+            .item{
+                width: 20%;
+                .form-check-label{
+                    font-size: 0;
+                    text-indent: 10000;
+                    height: 70px;
+                    border: 1px solid #EAE9FF;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    &.vietel{
+                        background-image: url(../img/icon/logo_vietel.png);
+                    }
+                    &.vinaphone{
+                        background-image: url(../img/icon/logo_vina.png);
+                    }
+                    &.mobifone{
+                        background-image: url(../img/icon/logo_mobiphone.png);
+                    }
+                    &.gate{
+                        background-image: url(../img/icon/logo_gate.png);
+                    }
+                    &.zing{
+                        background-image: url(../img/icon/logo_zing.png);
+                    }
+                }
+                .form-check-input:checked + .form-check-label{
+                    border: 2px solid #F38547;
+                }
+            }
+        }
+    }
+    .btn-style-3{
+        padding: 10px 50px;
+
+    }
+
+}
+
 /* ======================= FORM LOGIN ===========================*/
 #navbarTop-menu {
     @include MediaQuery($sml) {

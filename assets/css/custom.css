@@ -1,4 +1,7 @@
 @charset "UTF-8";
+.btn {
+  border-width: 0; }
+
 .bg-color-gray {
   background-color: #EAE9FF; }
 
@@ -711,9 +714,13 @@ ul.menu-footer {
 /*================ THÔNG BÁO ==================*/
 .napTien-info #fastPayment .nav li .nav-link.active {
   background-color: #7740EC; }
-.napTien-info #eBank {
+.napTien-info #eBank .brand-payment {
   margin-top: -20px;
-  padding-top: 50px !important; }
+  padding-top: 30px !important; }
+  .napTien-info #eBank .brand-payment .list-item {
+    margin-top: 30px; }
+.napTien-info .content-rules .title-heading {
+  color: #ea5a15; }
 /*============== TABLE STYLE=================*/
 .table-custom-style thead {
   background-color: #9692EA; }
@@ -963,9 +970,9 @@ ul.menu-footer {
 @media (max-width: 568px) {
   .brand-payment .list-item li.item {
     width: 33.3333%; } }
-.brand-payment .list-item .form-check {
+.brand-payment .form-check {
   position: relative; }
-  .brand-payment .list-item .form-check::before {
+  .brand-payment .form-check::before {
     content: "";
     width: 95px;
     height: 95px;
@@ -975,10 +982,63 @@ ul.menu-footer {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -60px); }
-  .brand-payment .list-item .form-check .form-check-input {
+  .brand-payment .form-check .form-check-input {
     width: 20px;
     height: 20px;
     margin-top: 20px; }
+
+@media (max-width: 568px) {
+  #banks-transfer .auto-bank {
+    flex-direction: column; } }
+#banks-transfer .auto-bank .form-check {
+  min-width: 160px; }
+#banks-transfer .auto-bank .content {
+  padding-left: 30px; }
+
+.payment-methods .list-item .item {
+  width: 25%;
+  padding: 2px; }
+  .payment-methods .list-item .item .form-check {
+    padding: 0;
+    margin: 0; }
+  .payment-methods .list-item .item .form-check-label {
+    background-color: #EAE9FF;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 6px; }
+  .payment-methods .list-item .item .form-check-input:checked + .form-check-label {
+    background-color: #F38547;
+    color: #fff;
+    background-image: url(../img/icon/partent_button.png);
+    background-repeat: no-repeat;
+    background-position: bottom right; }
+.payment-methods .list-item.list-card .item {
+  width: 20%; }
+  .payment-methods .list-item.list-card .item .form-check-label {
+    font-size: 0;
+    text-indent: 10000;
+    height: 70px;
+    border: 1px solid #EAE9FF;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .payment-methods .list-item.list-card .item .form-check-label.vietel {
+      background-image: url(../img/icon/logo_vietel.png); }
+    .payment-methods .list-item.list-card .item .form-check-label.vinaphone {
+      background-image: url(../img/icon/logo_vina.png); }
+    .payment-methods .list-item.list-card .item .form-check-label.mobifone {
+      background-image: url(../img/icon/logo_mobiphone.png); }
+    .payment-methods .list-item.list-card .item .form-check-label.gate {
+      background-image: url(../img/icon/logo_gate.png); }
+    .payment-methods .list-item.list-card .item .form-check-label.zing {
+      background-image: url(../img/icon/logo_zing.png); }
+  .payment-methods .list-item.list-card .item .form-check-input:checked + .form-check-label {
+    border: 2px solid #F38547; }
+.payment-methods .btn-style-3 {
+  padding: 10px 50px; }
 
 /* ======================= FORM LOGIN ===========================*/
 @media (max-width: 991px) {
