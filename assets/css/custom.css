@@ -2,6 +2,9 @@
 .btn {
   border-width: 0; }
 
+.btn-large {
+  padding: 10px 40px; }
+
 .bg-color-gray {
   background-color: #EAE9FF; }
 
@@ -995,8 +998,54 @@ ul.menu-footer {
 #banks-transfer .auto-bank .content {
   padding-left: 30px; }
 
-.payment-methods .list-item .item {
+ul.nav.list-dk li {
+  margin-bottom: 15px;
+  padding-left: 20px;
+  display: flex;
+  align-items: flex-start; }
+  ul.nav.list-dk li::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-image: url(../img/icon/icon_star_snmall.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 10px; }
+
+.list-card .item {
   width: 25%;
+  padding: 2px; }
+  .list-card .item .form-check {
+    padding: 0;
+    margin: 0; }
+  .list-card .item .form-check-label {
+    background-color: #EAE9FF;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 6px; }
+  .list-card .item .form-check-input:checked + .form-check-label {
+    background-color: #F38547;
+    color: #fff;
+    background-image: url(../img/icon/partent_button.png);
+    background-repeat: no-repeat;
+    background-position: bottom right; }
+
+.bank-account-info {
+  padding: 30px;
+  background-color: #F2F1FE; }
+  .bank-account-info li {
+    margin-bottom: 10px; }
+    .bank-account-info li span {
+      padding-left: 20px; }
+      .bank-account-info li span.text-bold {
+        font-weight: bold; }
+
+.payment-methods .list-item .item {
+  width: 145px;
   padding: 2px; }
   .payment-methods .list-item .item .form-check {
     padding: 0;

@@ -13,6 +13,9 @@ $sm: 568px;
 .btn{
     border-width: 0;
 }
+.btn-large{
+    padding: 10px 40px;
+}
 .bg-color-gray {
     background-color: #EAE9FF;
 }
@@ -1545,10 +1548,70 @@ ul.menu-footer {
         }
     }
 }
+ul.nav.list-dk{
+    li {
+        margin-bottom: 15px;
+        padding-left: 20px;
+        display: flex;
+        align-items: flex-start;
+        &::before{
+            content: "";
+            width: 20px;
+            height: 20px;
+            display: block;
+            background-image: url(../img/icon/icon_star_snmall.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-right: 10px;
+        }
+    }
+} 
+
+.list-card{
+    .item{
+        width: 25%;
+        padding: 2px;
+        .form-check{
+            padding: 0;
+            margin: 0;
+        }
+        .form-check-label{
+            background-color: #EAE9FF;
+            height: 50px;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            border-radius: 6px;
+        }
+        .form-check-input:checked + .form-check-label{
+            background-color: #F38547;
+            color: #fff;
+            background-image: url(../img/icon/partent_button.png);
+            background-repeat: no-repeat;
+            background-position: bottom right;
+        }
+        
+    }
+}
+.bank-account-info{
+    padding: 30px;
+    background-color: #F2F1FE;
+        li{
+            margin-bottom: 10px;
+            span{
+                padding-left: 20px;
+                &.text-bold{
+                    font-weight: bold;
+                }
+            }
+        }
+}
+
 .payment-methods{
     .list-item{
         .item{
-            width: 25%;
+            width: 145px;
             padding: 2px;
             .form-check{
                 padding: 0;
