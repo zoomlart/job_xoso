@@ -745,8 +745,11 @@
                                                                 </div>
                                                             </li>
                                                         </ul>
-                                                        <div class="text-center"><button
-                                                                class="btn btn-default btn-style-3 mt-4 btn-large">Rút tiền</button></div>
+                                                        <div class="text-center">
+                                                            <a type="button" class="btn btn-default btn-style-3 mt-4 btn-large" href="#" title="Xem chi tiết" data-bs-toggle="modal"
+                                                                data-bs-target="#confirmWidthDraw">Rút tiền
+                                                            </a>
+                                                        </div>
 
                                                     </form>
                                                 </div>
@@ -1438,6 +1441,47 @@
             </div>
         </div>
     </footer>
+    <div class="modal fade" id="confirmWidthDraw" tabindex="-1" aria-labelledby="confirmWidthDrawModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmWidthDrawModalLabel">XÁC NHẬN RÚT TIỀN</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body justify-content-center text-center p-0">
+                    <div class="popup-content bg-color-gray p-4">
+                        <div class="wrap">
+                            <form class="form-group">
+                                <div class="form-group text-center">
+                                    <label for="soTienRut" class=" col-form-label">Số tiền rút</label>
+                                    <div class="input-group bg-white p-2 d-flex justify-content-center">
+                                        <span><strong>1.000.000.000</strong></span>
+                                    </div>
+                                </div>
+                                <div class="form-group text-center">
+                                    <label for="soTienRut" class=" col-form-label">Thông tin nhận tiền</label>
+                                    <ul class="bank-account-info nav">
+                                        <li>Tên tài khoản: <span class="text-bold">Nguyễn Vân Anh</span></li>
+                                        <li>Ngân hàng: <span class="text">Ngân hàng nhà nước Việt Nam</span></li>
+                                        <li>Số tài khoản: <span class="text-bold">45456464747788</span></li>
+                                        <li>Chi nhánh: <span class="text">Chi nhánh</span></li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="form-group justify-content-center mt-4">
+                                    <button type="button" class="btn btn-primary btn-style-1" data-bs-dismiss="modal" aria-label="Close">Đóng</button>
+                                    <button type="submit" class="btn btn-primary btn-style-3 ms-3">Xác nhận</button>
+                                </div>
+                                <!-- <p class="red">Chọn phương thức xác thực khác<br/><span class="blue">Mất số điện thoại OTP</span></p>
+                                <p>Chưa có tài khoản? <b class="red">Đăng ký</b></p> -->
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Bootstrap core JS-->
     <script src="../assets/js/moment.js"></script>
