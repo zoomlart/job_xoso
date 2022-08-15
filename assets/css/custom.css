@@ -1034,6 +1034,29 @@ ul.nav.list-dk li {
     background-repeat: no-repeat;
     background-position: bottom right; }
 
+.momo-item .item {
+  border-radius: 4px; }
+.momo-item .form-check {
+  padding: 0; }
+  .momo-item .form-check .form-check-input:checked + .form-check-label {
+    background-color: #ffefe9;
+    border: 1px solid #ff9168; }
+.momo-item .item-wrap {
+  display: flex;
+  align-items: center; }
+  .momo-item .item-wrap img {
+    max-width: 64px; }
+  .momo-item .item-wrap .content {
+    padding-left: 15px; }
+    .momo-item .item-wrap .content li {
+      display: flex;
+      width: 100%; }
+      .momo-item .item-wrap .content li span {
+        width: 50%;
+        display: block; }
+        .momo-item .item-wrap .content li span.text-bold {
+          font-weight: bold; }
+
 .bank-account-info {
   padding: 30px;
   background-color: #F2F1FE; }

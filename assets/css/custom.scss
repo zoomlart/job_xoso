@@ -1594,6 +1594,44 @@ ul.nav.list-dk{
         
     }
 }
+.momo-item{
+    .item{
+        border-radius: 4px;
+    }
+    .form-check{
+        padding: 0;
+        .form-check-input:checked + .form-check-label{
+            background-color: rgba(255, 239, 233, 1);
+            border: 1px solid rgba(255, 145, 104, 1);
+            // color: #fff;
+        }
+    }
+
+    .item-wrap{
+        display: flex;
+        align-items: center;
+        img{
+            max-width: 64px;
+        }
+        .content{
+            padding-left: 15px;
+            li{
+                display: flex;
+                width: 100%;
+
+                span{
+                    width: 50%;
+                    display: block;
+                    &.text-bold{
+                        font-weight: bold;
+                    }
+                    
+                }
+            }
+        }
+    }
+    
+}
 .bank-account-info{
     padding: 30px;
     background-color: #F2F1FE;
@@ -1607,7 +1645,6 @@ ul.nav.list-dk{
             }
         }
 }
-
 .payment-methods{
     .list-item{
         .item{
