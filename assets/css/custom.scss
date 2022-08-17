@@ -125,6 +125,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-size: 14px;;
 }
 /*================= MAIN ===================*/
 .main>.container {
@@ -705,7 +706,7 @@ ul.menu-footer {
             }
             .icon {
                 &.icon_cat_account_02 {
-                    background-image: url(../img/icon/icon_cat_user-02.png);
+                    background-image: url(../img/icon/icon_cat_accout_white.png);
                 }
                 &.icon_cat_au_02 {
                     background-image: url(../img/icon/icon_cat_accout-03.png);
@@ -1711,7 +1712,110 @@ ul.nav.list-dk{
     }
 
 }
-
+.bang-xep-hang{
+    h2{
+        padding: 0;
+        background-color: #524AFF;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 6px 6px 0 0 ;
+        font-size: 20px;
+    }
+    .wrap{
+        background: linear-gradient(180deg, #43455F 0%, #2F3146 100%);
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+    //    padding: 30px  ;
+        &::before{
+            content: "";
+            background-image: url(../img/icon/icon_stiker.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            width: 64px;
+            height: 56px;
+            background-size: contain;
+        }
+        
+        .head{
+            padding: 10px 10px;
+            background: linear-gradient(180deg, #E34421 0%, #D9401F 100%);
+            color: #fff;
+            span{
+                width: 60%;
+                text-align: right;
+            }
+        }
+        .content{
+            padding: 15px;
+            li{
+                width: 25%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .num2{
+        .wrap{
+            &::before{
+                background-image: url(../img/icon/icon_stiker2.png);
+            }
+        }
+    }
+    .num3{
+        .wrap{
+            &::before{
+                background-image: url(../img/icon/icon_stiker3.png);
+            }
+        }
+    }
+    .rank-wrap{
+        .rank-item{
+            background-color: #fff;
+            border-radius: 6px;
+            padding: 6px;
+            position: relative;
+            overflow: hidden;
+            &::before{
+                content: "";
+                position: absolute;
+                border-left: 42px solid #5E5AAE;
+                border-top: 60px solid #5E5AAE;
+                border-right: 16px solid transparent;
+                left: 0;
+                top: 0;
+                z-index: 0;
+            }
+            .left{
+                width: 60%;
+            }
+            .right{
+                width: 40%;
+            }
+            .rank_number{
+                width: 42px;
+                display: block;
+                text-align: center;
+                position: relative;
+                z-index: 1;
+                color: #fff;
+            }
+            .rank_info{
+                display: flex;
+                flex-direction: column;
+                padding-left: 20px;
+            }
+            .right{
+                .item{
+                    width: 25%;
+                }
+            }
+        }
+        
+    }
+}
 /* ======================= FORM LOGIN ===========================*/
 #navbarTop-menu {
     @include MediaQuery($sml) {

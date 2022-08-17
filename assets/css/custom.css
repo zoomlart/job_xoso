@@ -89,7 +89,8 @@ header.bg-light.slide-top {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; }
+  min-height: 100vh;
+  font-size: 14px; }
 
 /*================= MAIN ===================*/
 @media (max-width: 1399px) {
@@ -524,7 +525,7 @@ ul.menu-footer {
     .acccout-page .categories-list a.active .icon, .acccout-page .categories-list a:hover .icon {
       filter: invert(0) sepia(0) saturate(0) hue-rotate(0) brightness(0) contrast(80%); }
   .acccout-page .categories-list a .icon.icon_cat_account_02 {
-    background-image: url(../img/icon/icon_cat_user-02.png); }
+    background-image: url(../img/icon/icon_cat_accout_white.png); }
   .acccout-page .categories-list a .icon.icon_cat_au_02 {
     background-image: url(../img/icon/icon_cat_accout-03.png); }
   .acccout-page .categories-list a .icon.icon_cat_history {
@@ -1111,6 +1112,77 @@ ul.nav.list-dk li {
     border: 2px solid #F38547; }
 .payment-methods .btn-style-3 {
   padding: 10px 50px; }
+
+.bang-xep-hang h2 {
+  padding: 0;
+  background-color: #524AFF;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px 6px 0 0;
+  font-size: 20px; }
+.bang-xep-hang .wrap {
+  background: linear-gradient(180deg, #43455F 0%, #2F3146 100%);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative; }
+  .bang-xep-hang .wrap::before {
+    content: "";
+    background-image: url(../img/icon/icon_stiker.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    width: 64px;
+    height: 56px;
+    background-size: contain; }
+  .bang-xep-hang .wrap .head {
+    padding: 10px 10px;
+    background: linear-gradient(180deg, #E34421 0%, #D9401F 100%);
+    color: #fff; }
+    .bang-xep-hang .wrap .head span {
+      width: 60%;
+      text-align: right; }
+  .bang-xep-hang .wrap .content {
+    padding: 15px; }
+    .bang-xep-hang .wrap .content li {
+      width: 25%; }
+      .bang-xep-hang .wrap .content li img {
+        width: 100%; }
+.bang-xep-hang .num2 .wrap::before {
+  background-image: url(../img/icon/icon_stiker2.png); }
+.bang-xep-hang .num3 .wrap::before {
+  background-image: url(../img/icon/icon_stiker3.png); }
+.bang-xep-hang .rank-wrap .rank-item {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 6px;
+  position: relative;
+  overflow: hidden; }
+  .bang-xep-hang .rank-wrap .rank-item::before {
+    content: "";
+    position: absolute;
+    border-left: 42px solid #5E5AAE;
+    border-top: 60px solid #5E5AAE;
+    border-right: 16px solid transparent;
+    left: 0;
+    top: 0;
+    z-index: 0; }
+  .bang-xep-hang .rank-wrap .rank-item .left {
+    width: 60%; }
+  .bang-xep-hang .rank-wrap .rank-item .right {
+    width: 40%; }
+  .bang-xep-hang .rank-wrap .rank-item .rank_number {
+    width: 42px;
+    display: block;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    color: #fff; }
+  .bang-xep-hang .rank-wrap .rank-item .rank_info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px; }
+  .bang-xep-hang .rank-wrap .rank-item .right .item {
+    width: 25%; }
 
 /* ======================= FORM LOGIN ===========================*/
 @media (max-width: 991px) {
