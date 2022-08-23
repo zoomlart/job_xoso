@@ -2,26 +2,42 @@
 .btn {
   border-width: 0; }
 
+.btn-default {
+  background: #EAE9FF;
+  border: 1px solid #828284;
+  border-radius: 5px; }
+
 .btn-large {
-  padding: 10px 40px; }
+  padding: 10px 40px;
+  border-width: 0; }
 
 .bg-color-gray {
   background-color: #EAE9FF; }
+
+.color-active {
+  color: #F42020; }
 
 .bg-color-gray-300 {
   background-color: #F2F1FE; }
 
 .btn-style-1 {
   background: linear-gradient(180deg, #FF9052 0%, #FB5520 100%) !important;
-  color: #fff !important; }
+  color: #fff !important;
+  border-width: 0; }
 
 .btn-style-2 {
   background: linear-gradient(180deg, #52ACFF 0%, #1660CF 100%) !important;
-  color: #fff !important; }
+  color: #fff !important;
+  border-width: 0; }
 
 .btn-style-3 {
   background: linear-gradient(180deg, #20E486 0%, #0C9C46 100%) !important;
-  color: #fff !important; }
+  color: #fff !important;
+  border-width: 0; }
+
+.btn-style-4 {
+  background: #7740EC;
+  border-width: 0; }
 
 .btn-style-1:hover {
   background: linear-gradient(180deg, #FF9052 0%, #FB5520 0%) !important;
@@ -91,6 +107,44 @@ body {
   flex-direction: column;
   min-height: 100vh;
   font-size: 14px; }
+
+.input-number-group {
+  display: flex;
+  justify-content: center; }
+  .input-number-group input[type=number]::-webkit-inner-spin-button,
+  .input-number-group input[type=number]::-webkit-outer-spin-button {
+    appearance: none; }
+  .input-number-group .input-group-button {
+    line-height: calc(80px/2 - 12px); }
+  .input-number-group .input-number {
+    padding: 0 6px;
+    vertical-align: top;
+    text-align: center;
+    outline: none;
+    display: block;
+    margin: 0;
+    height: 35px;
+    border: 2px solid #A6A4D6; }
+  .input-number-group .input-number,
+  .input-number-group .input-number-decrement,
+  .input-number-group .input-number-increment {
+    user-select: none; }
+  .input-number-group .input-number-decrement,
+  .input-number-group .input-number-increment {
+    display: inline-block;
+    background-color: #A6A4D6;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 400;
+    height: 35px;
+    width: 30px;
+    color: #fff; }
+  .input-number-group .input-number-decrement {
+    border-radius: 3px 0 0 3px; }
+  .input-number-group .input-number-increment {
+    border-radius: 0 3px 3px 0; }
 
 /*================= MAIN ===================*/
 @media (max-width: 1399px) {
@@ -424,6 +478,16 @@ ul.menu-footer {
       .left-sidebar .sidebar-content .categories-list2 {
         padding: 15px; } }
 
+.breadcrumb .item {
+  display: flex;
+  align-items: center; }
+  .breadcrumb .item::after {
+    content: "\F285";
+    font-family: bootstrap-icons !important;
+    margin: 0 10px; }
+  .breadcrumb .item:last-child::after {
+    content: none; }
+
 .heading {
   font-size: 20px;
   display: flex;
@@ -703,10 +767,107 @@ ul.menu-footer {
         background-color: #506FDF;
         color: #fff;
         border-color: #506FDF; }
-
-.categories-list2 li {
-  margin-bottom: 20px; }
-  .categories-list2 li:last-child {
+  .acccout-page.livestream .result_top {
+    background-image: url(../img/banner-top-02.jpg);
+    background-position: top left;
+    background-size: cover;
+    min-height: 173px;
+    padding: 20px;
+    border-radius: 12px; }
+    @media (max-width: 991px) {
+      .acccout-page.livestream .result_top .time-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 30px; } }
+    .acccout-page.livestream .result_top .countdown {
+      font-size: 32px;
+      font-weight: bold;
+      background-color: #fff;
+      border-radius: 50px;
+      display: inline-block;
+      padding: 0 20px;
+      height: 48px;
+      margin: 3px; }
+      @media (max-width: 991px) {
+        .acccout-page.livestream .result_top .countdown {
+          margin-top: 0 !important; } }
+  .acccout-page.livestream .numberDB span {
+    display: inline-block;
+    position: relative;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 20px;
+    color: #111;
+    font-weight: 700;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 3px; }
+  .acccout-page.livestream .rate-bit {
+    background-color: #FFE3BA;
+    padding: 5px 10px;
+    border-radius: 6px;
+    margin-left: 5px;
+    color: #ea5a15;
+    font-size: 16px; }
+    .acccout-page.livestream .rate-bit span {
+      margin: 0 5px;
+      color: #111;
+      font-size: 14px; }
+  .acccout-page.livestream .unit__number .label-text {
+    min-width: 50px; }
+  .acccout-page.livestream .unit__number .num-list.num-list-bo span {
+    border: 1px solid #6864C4;
+    border-radius: 50%;
+    font-weight: bold;
+    color: #111; }
+    .acccout-page.livestream .unit__number .num-list.num-list-bo span.active {
+      background-color: #EA1609;
+      border-color: #EA1609;
+      color: #fff; }
+  .acccout-page.livestream .unit__number .num-list span {
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    display: inline-block;
+    margin: 2px;
+    color: #5A5959; }
+    .acccout-page.livestream .unit__number .num-list span.text-blue {
+      color: #2853EC; }
+    .acccout-page.livestream .unit__number .num-list span.text-red {
+      color: #D93A36; }
+  .acccout-page.livestream .options__unit a {
+    width: calc(33.33333% - 4px);
+    margin: 2px;
+    padding: 5px 0;
+    background-color: #AEADBE;
+    color: #fff; }
+  .acccout-page.livestream .button_unit .btn {
+    width: 160px;
+    padding: 10px 20px;
+    color: #fff; }
+    .acccout-page.livestream .button_unit .btn.btn-reset {
+      background: linear-gradient(180deg, #949494 0%, #494A49 100%); }
+    .acccout-page.livestream .button_unit .btn.btn-add {
+      background: linear-gradient(180deg, #52ACFF 0%, #1660CF 100%); }
+    .acccout-page.livestream .button_unit .btn.btn-quick {
+      background: linear-gradient(180deg, #FF9052 0%, #FB5520 100%); }
+  .acccout-page.livestream .list__ndc {
+    position: relative; }
+    .acccout-page.livestream .list__ndc .panel__options {
+      position: absolute;
+      right: 20px;
+      width: auto;
+      background-color: #514F65;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 3px;
+      top: 20px; }
+  .acccout-page:last-child {
     margin-bottom: 0; }
 
 /*================ LIEN KET DANG KY ==================*/
