@@ -10,6 +10,9 @@ $input-number-size: 80px;
         @content;
     }
 }
+.color-red{
+    color: #EA4747;
+}
 .btn{
     border-width: 0;
 }
@@ -31,7 +34,10 @@ $input-number-size: 80px;
 .bg-color-gray-300 {
     background-color: #F2F1FE;
 }
-
+.btn-gray{
+    background: linear-gradient(180deg, #949494 0%, #494A49 100%);
+    color: #fff;
+}
 .btn-style-1 {
     background: linear-gradient(180deg, #FF9052 0%, #FB5520 100%) !important;
     color: #fff !important;
@@ -44,7 +50,6 @@ $input-number-size: 80px;
     border-width: 0;
 
 }
-
 .btn-style-3 {
     background: linear-gradient(180deg, #20E486 0%, #0C9C46 100%) !important;
     color: #fff !important;
@@ -54,6 +59,12 @@ $input-number-size: 80px;
 .btn-style-4 {
     background: #7740EC;
     border-width: 0;
+}
+.btn-style-5 {
+    background: linear-gradient(180deg, #52ACFF 0%, #1660CF 100%);
+    color: #fff !important;
+    border-width: 0;
+
 }
 .btn-style-1:hover {
     background: linear-gradient(180deg, #FF9052 0%, #FB5520 0%) !important;
@@ -748,7 +759,6 @@ ul.menu-footer {
 }
 
 /*-=================ACCOUNT PAGE +==================*/
-.acccout-page {
     .security-level {
         .icon_head_security {
             background-image: url(../img/icon/icon_security.png);
@@ -1103,7 +1113,36 @@ ul.menu-footer {
             }
         }
     }
-
+    .panel_bottom{
+        button{
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            &.btn-advance{
+                min-width: 300px;
+                padding: 0;
+                > span{
+                    width: 40%;
+                    display: block;
+                    text-align: center;
+                    line-height: 1.2;
+                    padding: 0 10px;
+                    
+                }
+                .countdown{
+                    width: 60%;
+                    background-image: url(../img/icon/button_bg_gray.png);
+                    background-size: cover;
+                    background-position: left;
+                    height: 50px;
+                    padding: 7px 10px 7px 20px;
+                }
+            }
+            
+        }
+    }
     /*=============== STYLE PAGINATION =================*/
     @at-root .pagination .page-item {
         margin: 0 5px;
@@ -1122,8 +1161,7 @@ ul.menu-footer {
             }
         }
     }
-    &.livestream{
-        .result_top{
+    .result_top{
             background-image: url(../img/banner-top-02.jpg);
             background-position: top left;
             background-size: cover;
@@ -1191,6 +1229,7 @@ ul.menu-footer {
                         border-radius: 50%;;
                         font-weight: bold;
                         color: #111;
+                        &:hover,
                         &.active{
                             background-color: #EA1609;
                             border-color: #EA1609;
@@ -1226,21 +1265,47 @@ ul.menu-footer {
                 padding: 5px 0;
                 background-color: #AEADBE;
                 color: #fff;
+                &:hover{
+                    background: linear-gradient(180deg, #FF9052 0%, #FB5520 100%)
+                }
             }
         }
         .button_unit {
             .btn{
                 width: 160px;
-                padding: 10px 20px;
+                padding: 10px 10px 10px 60px;
                 color: #fff;
+                overflow: hidden;
+                position: relative;
+                &::before{
+                    content: "";
+                    width: 60px;
+                    height: 44px;
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
                 &.btn-reset{
                     background: linear-gradient(180deg, #949494 0%, #494A49 100%);
+                    &::before{
+                        background-image: url(../img/icon/icon_button_gray.png);
+                    }
                 }
                 &.btn-add{
                     background: linear-gradient(180deg, #52ACFF 0%, #1660CF 100%);
+                    &::before{
+                        background-image: url(../img/icon/icon_button_blue.png);
+                    }
                 }
                 &.btn-quick{
                     background: linear-gradient(180deg, #FF9052 0%, #FB5520 100%);
+                    &::before{
+                        background-image: url(../img/icon/icon_button_orange.png);
+                    }
                 }
             }
         }
@@ -1257,12 +1322,35 @@ ul.menu-footer {
                 top: 20px
             }
         }
-
-    }
-    &:last-child {
-        margin-bottom: 0;
-    }
-}
+        .kqsx_lives{
+            background: linear-gradient(270deg, #AF1D14 0%, #E32E15 100%);
+            border-radius: 10px;
+            min-height: 173px;
+        }
+        .loto_inner{
+            background-image: url(../img/partent_bg.png);
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: cover;
+            border-radius: 10px 10px 0 0;
+            padding: 10px 16px;
+        }
+        .result_loto_list{
+            background-color: #2B2D48;
+            color: #fff;
+            .button_group{
+                a{
+                    white-space:nowrap;
+                    text-overflow: ellipsis;
+                    display: block;
+                    overflow: hidden;
+                    background-color: #1E1F30;
+                    color:#fff;
+                    border-radius: 0;
+                    border: 0 none
+                }
+            }
+        }
 
 /*================ LIEN KET DANG KY ==================*/
 @at-root .register-links {
@@ -2163,3 +2251,4 @@ ul.nav.list-dk{
         padding: 72px 15px 0;
     }
 }
+@import "xosovip";
