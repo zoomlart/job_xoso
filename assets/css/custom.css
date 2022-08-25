@@ -864,7 +864,10 @@ ul.menu-footer {
   border-radius: 50%;
   font-weight: bold;
   color: #111; }
-  .unit__number .num-list.num-list-bo span:hover, .unit__number .num-list.num-list-bo span.active {
+  .unit__number .num-list.num-list-bo span:hover {
+    border-color: #EA1609;
+    color: #EA1609; }
+  .unit__number .num-list.num-list-bo span.active {
     background-color: #EA1609;
     border-color: #EA1609;
     color: #fff; }
@@ -985,10 +988,28 @@ ul.menu-footer {
   .table-custom-style tbody tr td,
   .table-custom-style tbody tr th {
     border: 1px solid #f8f8f8; }
+  .table-custom-style tbody tr .fix-width {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100px; }
   .table-custom-style tbody tr:nth-child(odd) th,
   .table-custom-style tbody tr:nth-child(odd) td {
     background-color: #DFDDFC;
     box-shadow: none; }
+
+.table-fixed tbody {
+  display: block;
+  max-height: 300px;
+  overflow-y: auto;
+  min-width: 700px; }
+
+.table-fixed thead,
+.table-fixed tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed; }
 
 #messengerModal .table-custom-style tbody tr {
   color: #4B4B4B; }
@@ -1518,8 +1539,10 @@ ul.nav.list-dk li {
   .xoso-vip-page .group-list:nth-child(odd) {
     background-color: #3C3E64; }
   .xoso-vip-page .group-list.head label {
-    width: 50%;
-    padding: 0 20px; }
+    width: calc(100% - 60px);
+    text-align: center; }
+    .xoso-vip-page .group-list.head label:first-child {
+      width: 50px; }
 .xoso-vip-page #quick_number .number_choose label,
 .xoso-vip-page #nhapso .number_choose label {
   width: 120px;

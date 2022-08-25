@@ -55,3 +55,6 @@ $('.input-number-increment').click(function() {
     var val = parseInt($input.val(), 10);
     $input.val(val - 1);
   });
+  $(document).ready(function(){
+    $('[data-bs-toggle="tooltip"]').tooltip(); 
+});

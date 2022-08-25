@@ -1229,7 +1229,10 @@ ul.menu-footer {
                         border-radius: 50%;;
                         font-weight: bold;
                         color: #111;
-                        &:hover,
+                        &:hover{
+                            border-color: #EA1609;  
+                            color: #EA1609;
+                        }
                         &.active{
                             background-color: #EA1609;
                             border-color: #EA1609;
@@ -1420,7 +1423,13 @@ ul.menu-footer {
             th {
                 border: 1px solid #f8f8f8;
             }
-
+            .fix-width{
+                display: block;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                max-width: 100px;
+            }
             &:nth-child(odd) {
 
                 th,
@@ -1432,7 +1441,19 @@ ul.menu-footer {
         }
     }
 }
-
+.table-fixed  tbody {
+    display: block;
+    max-height: 300px;
+    overflow-y: auto;
+    min-width: 700px;
+  }
+  
+.table-fixed  thead, 
+.table-fixed  tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
 #messengerModal {
     .table-custom-style {
         tbody {
