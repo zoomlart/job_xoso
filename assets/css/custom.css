@@ -987,7 +987,8 @@ ul.menu-footer {
   color: #4B4B4B; }
   .table-custom-style tbody tr td,
   .table-custom-style tbody tr th {
-    border: 1px solid #f8f8f8; }
+    border: 1px solid #f8f8f8;
+    vertical-align: middle; }
   .table-custom-style tbody tr .fix-width {
     display: block;
     overflow: hidden;
@@ -1020,7 +1021,10 @@ ul.menu-footer {
       min-width: 140px; }
 
 .user__auth {
-  background-color: #232157; }
+  background-color: #232157;
+  position: sticky;
+  top: 0;
+  z-index: 100000; }
   @media (max-width: 991px) {
     .user__auth {
       z-index: 1000000; } }
@@ -1383,6 +1387,29 @@ ul.nav.list-dk li {
 .payment-methods .btn-style-3 {
   padding: 10px 50px; }
 
+.result_loto_list .group-list {
+  padding: 10px; }
+  .result_loto_list .group-list:nth-child(odd) {
+    background-color: #3C3E64; }
+  .result_loto_list .group-list.head label {
+    width: calc(100% - 60px);
+    text-align: center; }
+    .result_loto_list .group-list.head label:first-child {
+      width: 50px; }
+  .result_loto_list .group-list .number_result .number {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    display: inline-block;
+    margin: 2px 0;
+    background-color: #EA1609;
+    border-color: #EA1609;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 50%;
+    text-decoration: none; }
+
 .bang-xep-hang h2 {
   padding: 0;
   background-color: #524AFF;
@@ -1534,17 +1561,17 @@ ul.nav.list-dk li {
 
   .ket-qua-xo-so .wrapper {
     padding: 72px 15px 0; } }
-.xoso-vip-page .group-list {
+.page-main .group-list {
   padding: 10px; }
-  .xoso-vip-page .group-list:nth-child(odd) {
+  .page-main .group-list:nth-child(odd) {
     background-color: #3C3E64; }
-  .xoso-vip-page .group-list.head label {
+  .page-main .group-list.head label {
     width: calc(100% - 60px);
     text-align: center; }
-    .xoso-vip-page .group-list.head label:first-child {
+    .page-main .group-list.head label:first-child {
       width: 50px; }
-.xoso-vip-page #quick_number .number_choose label,
-.xoso-vip-page #nhapso .number_choose label {
+.page-main #quick_number .number_choose label,
+.page-main #nhapso .number_choose label {
   width: 120px;
   background-image: url(../img/icon/bg_label_blue.png);
   background-position: right;
@@ -1553,19 +1580,19 @@ ul.nav.list-dk li {
   padding: 10px 15px;
   border-radius: 5px;
   color: #fff; }
-.xoso-vip-page #quick_number .options__unit,
-.xoso-vip-page #nhapso .options__unit {
+.page-main #quick_number .options__unit,
+.page-main #nhapso .options__unit {
   width: calc(100% - 120px); }
-.xoso-vip-page #quick_number .top_result span,
-.xoso-vip-page #nhapso .top_result span {
+.page-main #quick_number .top_result span,
+.page-main #nhapso .top_result span {
   background-color: #818181;
   padding: 5px 10px;
   border-radius: 4px;
   width: auto; }
-.xoso-vip-page #quick_number .top_result a,
-.xoso-vip-page #nhapso .top_result a {
+.page-main #quick_number .top_result a,
+.page-main #nhapso .top_result a {
   width: auto; }
-.xoso-vip-page .__list_number a {
+.page-main .__list_number a {
   width: 40px;
   height: 40px;
   line-height: 30px;

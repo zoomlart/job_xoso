@@ -1422,6 +1422,7 @@ ul.menu-footer {
             td,
             th {
                 border: 1px solid #f8f8f8;
+                vertical-align: middle;
             }
             .fix-width{
                 display: block;
@@ -1476,7 +1477,9 @@ ul.menu-footer {
 
 .user__auth {
     background-color: #232157;
-
+    position: sticky;
+    top: 0;
+    z-index: 100000;
     @include MediaQuery($sml) {
         z-index: 1000000;
     }
@@ -2038,6 +2041,41 @@ ul.nav.list-dk{
 
     }
 
+}
+.result_loto_list{
+    .group-list{
+        padding: 10px;
+        &:nth-child(odd){
+            background-color: #3C3E64 ;
+        }
+        &.head{
+            label{
+                width: calc(100% - 60px);
+                // padding: 0 15px;
+                text-align: center;
+                &:first-child{
+                    width: 50px;
+                }
+            }
+        }
+        .number_result{
+            .number{
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                display: inline-block;
+                margin: 2px 0;
+                background-color: #EA1609;
+                border-color: #EA1609;
+                color: #fff;
+                font-weight: bold;
+                border-radius: 50%;
+                text-decoration: none;
+            }
+            
+        }
+    }
 }
 .bang-xep-hang{
     h2{

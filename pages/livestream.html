@@ -20,7 +20,7 @@
     <link href="../assets/css/custom.css" rel="stylesheet" />
 </head>
 
-<body class="acccout-page livestream">
+<body class="livestream-page livestream page-main">
     <!-- Responsive navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark user__auth">
         <div class="container">
@@ -323,24 +323,24 @@
                                     <div class="col-lg-9 pe-1">
                                         <ul class="nav nav-pills mb-3 mt-3" role="tablist">
                                             <li class="nav-item" role="presentation">
-                                                <button class="nav-link active" id="napTien-tab" data-bs-toggle="pill"
+                                                <button class="nav-link active" id="sode-tab" data-bs-toggle="pill"
                                                     data-bs-target="#tab-sode" type="button" role="tab" aria-controls="tab-sode"
                                                     aria-selected="true">Đánh đề</button>
                                             </li>
                                             <li class="nav-item" role="presentation">
-                                                <button class="nav-link" id="lichSuNapTien-tab" data-bs-toggle="pill"
-                                                    data-bs-target="#lichSuNapTien" type="button" role="tab"
-                                                    aria-controls="lichSuNapTien" aria-selected="false">3 Càng</button>
+                                                <button class="nav-link" id="threebit-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#threebit" type="button" role="tab"
+                                                    aria-controls="threebit" aria-selected="false">3 Càng</button>
                                             </li>
                                             <li class="nav-item" role="presentation">
-                                                <button class="nav-link" id="rutTien-tab" data-bs-toggle="pill"
-                                                    data-bs-target="#rutTien" type="button" role="tab" aria-controls="rutTien"
+                                                <button class="nav-link" id="fourbit-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#fourbit" type="button" role="tab" aria-controls="fourbit"
                                                     aria-selected="false">4 Càng</button>
                                             </li>
                                         </ul>
                                         <div class="tab-content" id="tabContent">
                                             <div class="tab-pane fade show active" id="tab-sode" role="tabpanel" aria-labelle
-                                                dby="napTien-tab" tabindex="0">
+                                                dby="sode-tab" tabindex="0">
                                                 <section class="sode-info mt-3 content-wrapper bg-color-gray">
                                                     <div class="row">
                                                         <div class="col-lg-6 col-md-6">
@@ -451,81 +451,575 @@
                                                         </div>
                                                     </div>
                                                 </section>
-                                                <section class="content-wrapper add_number mt-2 bg-color-gray">
-                                                    <div class="row align-content-center d-flex">
-                                                        <div class="col-lg-4 col-md-4 d-flex align-items-center justify-content-end">
-                                                            <span class="label-tex me-2">Cấp số nhân:</span>
-                                                            <div class="input-number-group">
-                                                                <div class="input-group-button">
-                                                                  <span class="input-number-decrement">-</span>
-                                                                </div>
-                                                                <input class="input-number" type="number" value="1" min="0" max="1000">
-                                                                <div class="input-group-button">
-                                                                  <span class="input-number-increment">+</span>
-                                                                </div>
-                                                              </div>
-        
-                                                        </div>
-                                                        <div class="col-lg-4 col-md-4 text-center d-flex align-content-center justify-content-center">
-                                                            <span class="lh-lg">Đã chọn: <span class="text-red fw-bold fs-6 red" style="color: #EE5919">10</span> số</span>
-                                                        </div>
-                                                        <div class="col-lg-4 col-md-4">
-                                                            <span class="lh-lg">Tiền đánh: <span class="text-red fw-bold fs-6 red" style="color: #EE5919">200,000,000</span> VNĐ</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="button_unit d-flex justify-content-center mt-4">
-                                                        <button class="btn btn-default btn-large btn-reset me-3">Đặt lại</button>
-                                                        <button class="btn btn-default btn-large btn-add me-3">Thêm cược</button>
-                                                        <button class="btn btn-default btn-large btn-quick">Cược nhanh</button>
-                                                    </div>
-                                                </section>
-                                                <section class="p-2 list__ndc  mt-2 bg-color-gray">
+                                            </div>
+                                            <div class="tab-pane fade" id="threebit" role="tabpanel" aria-labelle
+                                                dby="threebit-tab" tabindex="0">
+                                                <section class="sode-info mt-3 content-wrapper bg-color-gray">
                                                     <div class="row">
-                                                        <h3 class="fs-5 text-center m-3">NỘI DUNG CƯỢC</h3>
-                                                        <div class="panel__options">
-                                                            <a id="deleteAll"><i class="bi bi-trash-fill me-2"></i>Xóa Tất Cả</a>
+                                                        <div class="col-lg-6 col-md-6">
+                                                            <button class="btn btn-default btn-style-4 btn-active text-white me-2">3 Càng đặc biệt</button>
+                                                            <!-- <button class="btn btn-default btn-active">Đề đặc biệt</button> -->
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 d-flex justify-content-end">
+                                                            <button class="btn btn-default btn-style-4 btn-active text-white me-2">Chọn số</button>
+                                                            <button class="btn btn-default btn-active me-2">Nhập số</button>
+                                                            <button class="btn btn-default btn-active">Chọn số nhanh</button>
                                                         </div>
                                                     </div>
-                                                    <table class="table table-striped table-custom-style">
-                                                        <thead>
-                                                            <tr>
-                                                                <th scope="col">STT</th>
-                                                                <th scope="col">Tiền cược</th>
-                                                                <th scope="col">Số cược</th>
-                                                                <th scope="col">Tổng cược</th>
-                                                                <th scope="col">Cấp số nhân</th>
-                                                                <th scope="col">Tiền cược</th>
-                                                                <th scope="col">Tiền thắng/1 lần</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <th scope="row">#234567898</th>
-                                                                <td>234.000.000</td>
-                                                                <td>234.000.000</td>
-                                                                <td class="fw-bold" style="color: #EE5919">234.000.000</td>
-                                                                <td>x100</td>
-                                                                <td>234.000.000</td>
-                                                                <td class="fw-bold" style="color: #EE5919">234.000.000</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th scope="row">#234567898</th>
-                                                                <td>234.000.000</td>
-                                                                <td>234.000.000</td>
-                                                                <td class="fw-bold" style="color: #EE5919">234.000.000</td>
-                                                                <td>x100</td>
-                                                                <td>234.000.000</td>
-                                                                <td class="fw-bold" style="color: #EE5919">234.000.000</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
+                                                    <div class="row mt-4">
+                                                        <div class="col-lg-6 col-md-6 d-flex align-content-center">
+                                                            <i class="bi bi-question-circle-fill color-active fs-5 me-2"></i>
+                                                            <span class="text lh-lg">Đánh 2 chữ số đầu trong giải</span>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 d-flex justify-content-end align-items-center">
+                                                            <span class="label-text">Tỉ lệ cược</span>
+                                                            <div class="rate-bit">1<span>ăn</span>99</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-4">
+                                                        <div class="col-lg-8 col-md-8 d-flex align-content-center unit__number">
+                                                            <span class="label-text mt-2">Trăm</span>
+                                                            <div class="d-flex flex-column">
+                                                                <div class="num-list num-list-bo d-flex">
+                                                                    <span>0</span>
+                                                                    <span>1</span>
+                                                                    <span>2</span>
+                                                                    <span class="text-red">3</span>
+                                                                    <span>4</span>
+                                                                    <span class="active">5</span>
+                                                                    <span>6</span>
+                                                                    <span>7</span>
+                                                                    <span>8</span>
+                                                                    <span>9</span>
+                                                                </div>
+                                                                <div class="num-list d-flex">
+                                                                    <span class="fw-bold text-blue">20</span>
+                                                                    <span class="fw-bold text-blue">10</span>
+                                                                    <span class="fw-bold text-blue">15</span>
+                                                                    <span>2</span>
+                                                                    <span>5</span>
+                                                                    <span class="fw-bold text-blue">13</span>
+                                                                    <span class="fw-bold text-blue">39</span>
+                                                                    <span class="fw-bold text-red">0</span>
+                                                                    <span>8</span>
+                                                                    <span class="fw-bold tex-red">1</span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <i class="bi bi-question-circle fs-5 color-active ms-2 mt-4"></i>
+                                                        </div>
+        
+                                                        
+                                                        <div class="col-lg-4 col-lg-4 options__unit d-flex flex-wrap">
+                                                            <a href class="btn btn-default border-0 all">Tất cả</a>
+                                                            <a href class="btn btn-default border-0 tai btn-style-1">Tài</a>
+                                                            <a href class="btn btn-default border-0 xiu">Xỉu</a>
+                                                            <a href class="btn btn-default border-0 le">Lẻ</a>
+                                                            <a href class="btn btn-default border-0 chan">Chẵn</a>
+                                                            <a href class="btn btn-default border-0 xoa">Xóa</a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-4">
+                                                        <div class="col-lg-8 col-md-8 d-flex align-content-center unit__number">
+                                                            <span class="label-text mt-2">Chục</span>
+                                                            <div class="d-flex flex-column">
+                                                                <div class="num-list num-list-bo d-flex">
+                                                                    <span>0</span>
+                                                                    <span>1</span>
+                                                                    <span>2</span>
+                                                                    <span class="text-red">3</span>
+                                                                    <span>4</span>
+                                                                    <span class="active">5</span>
+                                                                    <span>6</span>
+                                                                    <span>7</span>
+                                                                    <span>8</span>
+                                                                    <span>9</span>
+                                                                </div>
+                                                                <div class="num-list d-flex">
+                                                                    <span class="fw-bold text-blue">20</span>
+                                                                    <span class="fw-bold text-blue">10</span>
+                                                                    <span class="fw-bold text-blue">15</span>
+                                                                    <span>2</span>
+                                                                    <span>5</span>
+                                                                    <span class="fw-bold text-blue">13</span>
+                                                                    <span class="fw-bold text-blue">39</span>
+                                                                    <span class="fw-bold text-red">0</span>
+                                                                    <span>8</span>
+                                                                    <span class="fw-bold tex-red">1</span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </div>
+        
+                                                        
+                                                        <div class="col-lg-4 col-lg-4 options__unit d-flex flex-wrap">
+                                                            <a href class="btn btn-default border-0 all">Tất cả</a>
+                                                            <a href class="btn btn-default border-0 tai btn-style-1">Tài</a>
+                                                            <a href class="btn btn-default border-0 xiu">Xỉu</a>
+                                                            <a href class="btn btn-default border-0 le">Lẻ</a>
+                                                            <a href class="btn btn-default border-0 chan">Chẵn</a>
+                                                            <a href class="btn btn-default border-0 xoa">Xóa</a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-4">
+                                                        <div class="col-lg-8 col-md-8 d-flex align-content-center unit__number">
+                                                            <span class="label-text mt-2">Đơn vị</span>
+                                                            <div class="d-flex flex-column">
+                                                                <div class="num-list num-list-bo d-flex">
+                                                                    <span>0</span>
+                                                                    <span>1</span>
+                                                                    <span>2</span>
+                                                                    <span class="text-red">3</span>
+                                                                    <span>4</span>
+                                                                    <span class="active">5</span>
+                                                                    <span>6</span>
+                                                                    <span>7</span>
+                                                                    <span>8</span>
+                                                                    <span>9</span>
+                                                                </div>
+                                                                <div class="num-list d-flex">
+                                                                    <span class="fw-bold text-blue">20</span>
+                                                                    <span class="fw-bold text-blue">10</span>
+                                                                    <span class="fw-bold text-blue">15</span>
+                                                                    <span>2</span>
+                                                                    <span>5</span>
+                                                                    <span class="fw-bold text-blue">13</span>
+                                                                    <span class="fw-bold text-blue">39</span>
+                                                                    <span class="fw-bold text-red">0</span>
+                                                                    <span>8</span>
+                                                                    <span class="fw-bold tex-red">1</span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </div>
+        
+                                                        
+                                                        <div class="col-lg-4 col-lg-4 options__unit d-flex flex-wrap">
+                                                            <a href class="btn btn-default border-0 all">Tất cả</a>
+                                                            <a href class="btn btn-default border-0 tai btn-style-1">Tài</a>
+                                                            <a href class="btn btn-default border-0 xiu">Xỉu</a>
+                                                            <a href class="btn btn-default border-0 le">Lẻ</a>
+                                                            <a href class="btn btn-default border-0 chan">Chẵn</a>
+                                                            <a href class="btn btn-default border-0 xoa">Xóa</a>
+                                                            
+                                                        </div>
+                                                    </div>
                                                 </section>
                                             </div>
-                                            
-                                           
-                                            
-                                            
+                                            <div class="tab-pane fade" id="fourbit" role="tabpanel" aria-labelle
+                                                dby="fourbit-tab" tabindex="0">
+                                                <section class="sode-info mt-3 content-wrapper bg-color-gray">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-md-6">
+                                                            <button class="btn btn-default btn-style-4 btn-active text-white me-2">4 Càng đặc biệt</button>
+                                                            <!-- <button class="btn btn-default btn-active">Đề đặc biệt</button> -->
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 d-flex justify-content-end">
+                                                            <button class="btn btn-default btn-style-4 btn-active text-white me-2">Chọn số</button>
+                                                            <button class="btn btn-default btn-active me-2">Nhập số</button>
+                                                            <button class="btn btn-default btn-active">Chọn số nhanh</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-4">
+                                                        <div class="col-lg-6 col-md-6 d-flex align-content-center">
+                                                            <i class="bi bi-question-circle-fill color-active fs-5 me-2"></i>
+                                                            <span class="text lh-lg">Đánh 2 chữ số đầu trong giải</span>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 d-flex justify-content-end align-items-center">
+                                                            <span class="label-text">Tỉ lệ cược</span>
+                                                            <div class="rate-bit">1<span>ăn</span>99</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-4">
+                                                        <div class="col-lg-8 col-md-8 d-flex align-content-center unit__number">
+                                                            <span class="label-text mt-2">Ngàn</span>
+                                                            <div class="d-flex flex-column">
+                                                                <div class="num-list num-list-bo d-flex">
+                                                                    <span>0</span>
+                                                                    <span>1</span>
+                                                                    <span>2</span>
+                                                                    <span class="text-red">3</span>
+                                                                    <span>4</span>
+                                                                    <span class="active">5</span>
+                                                                    <span>6</span>
+                                                                    <span>7</span>
+                                                                    <span>8</span>
+                                                                    <span>9</span>
+                                                                </div>
+                                                                <div class="num-list d-flex">
+                                                                    <span class="fw-bold text-blue">20</span>
+                                                                    <span class="fw-bold text-blue">10</span>
+                                                                    <span class="fw-bold text-blue">15</span>
+                                                                    <span>2</span>
+                                                                    <span>5</span>
+                                                                    <span class="fw-bold text-blue">13</span>
+                                                                    <span class="fw-bold text-blue">39</span>
+                                                                    <span class="fw-bold text-red">0</span>
+                                                                    <span>8</span>
+                                                                    <span class="fw-bold tex-red">1</span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <i class="bi bi-question-circle fs-5 color-active ms-2 mt-4"></i>
+                                                        </div>
+        
+                                                        
+                                                        <div class="col-lg-4 col-lg-4 options__unit d-flex flex-wrap">
+                                                            <a href class="btn btn-default border-0 all">Tất cả</a>
+                                                            <a href class="btn btn-default border-0 tai btn-style-1">Tài</a>
+                                                            <a href class="btn btn-default border-0 xiu">Xỉu</a>
+                                                            <a href class="btn btn-default border-0 le">Lẻ</a>
+                                                            <a href class="btn btn-default border-0 chan">Chẵn</a>
+                                                            <a href class="btn btn-default border-0 xoa">Xóa</a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-4">
+                                                        <div class="col-lg-8 col-md-8 d-flex align-content-center unit__number">
+                                                            <span class="label-text mt-2">Trăm</span>
+                                                            <div class="d-flex flex-column">
+                                                                <div class="num-list num-list-bo d-flex">
+                                                                    <span>0</span>
+                                                                    <span>1</span>
+                                                                    <span>2</span>
+                                                                    <span class="text-red">3</span>
+                                                                    <span>4</span>
+                                                                    <span class="active">5</span>
+                                                                    <span>6</span>
+                                                                    <span>7</span>
+                                                                    <span>8</span>
+                                                                    <span>9</span>
+                                                                </div>
+                                                                <div class="num-list d-flex">
+                                                                    <span class="fw-bold text-blue">20</span>
+                                                                    <span class="fw-bold text-blue">10</span>
+                                                                    <span class="fw-bold text-blue">15</span>
+                                                                    <span>2</span>
+                                                                    <span>5</span>
+                                                                    <span class="fw-bold text-blue">13</span>
+                                                                    <span class="fw-bold text-blue">39</span>
+                                                                    <span class="fw-bold text-red">0</span>
+                                                                    <span>8</span>
+                                                                    <span class="fw-bold tex-red">1</span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <i class="bi bi-question-circle fs-5 color-active ms-2 mt-4"></i>
+                                                        </div>
+        
+                                                        
+                                                        <div class="col-lg-4 col-lg-4 options__unit d-flex flex-wrap">
+                                                            <a href class="btn btn-default border-0 all">Tất cả</a>
+                                                            <a href class="btn btn-default border-0 tai btn-style-1">Tài</a>
+                                                            <a href class="btn btn-default border-0 xiu">Xỉu</a>
+                                                            <a href class="btn btn-default border-0 le">Lẻ</a>
+                                                            <a href class="btn btn-default border-0 chan">Chẵn</a>
+                                                            <a href class="btn btn-default border-0 xoa">Xóa</a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-4">
+                                                        <div class="col-lg-8 col-md-8 d-flex align-content-center unit__number">
+                                                            <span class="label-text mt-2">Chục</span>
+                                                            <div class="d-flex flex-column">
+                                                                <div class="num-list num-list-bo d-flex">
+                                                                    <span>0</span>
+                                                                    <span>1</span>
+                                                                    <span>2</span>
+                                                                    <span class="text-red">3</span>
+                                                                    <span>4</span>
+                                                                    <span class="active">5</span>
+                                                                    <span>6</span>
+                                                                    <span>7</span>
+                                                                    <span>8</span>
+                                                                    <span>9</span>
+                                                                </div>
+                                                                <div class="num-list d-flex">
+                                                                    <span class="fw-bold text-blue">20</span>
+                                                                    <span class="fw-bold text-blue">10</span>
+                                                                    <span class="fw-bold text-blue">15</span>
+                                                                    <span>2</span>
+                                                                    <span>5</span>
+                                                                    <span class="fw-bold text-blue">13</span>
+                                                                    <span class="fw-bold text-blue">39</span>
+                                                                    <span class="fw-bold text-red">0</span>
+                                                                    <span>8</span>
+                                                                    <span class="fw-bold tex-red">1</span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </div>
+        
+                                                        
+                                                        <div class="col-lg-4 col-lg-4 options__unit d-flex flex-wrap">
+                                                            <a href class="btn btn-default border-0 all">Tất cả</a>
+                                                            <a href class="btn btn-default border-0 tai btn-style-1">Tài</a>
+                                                            <a href class="btn btn-default border-0 xiu">Xỉu</a>
+                                                            <a href class="btn btn-default border-0 le">Lẻ</a>
+                                                            <a href class="btn btn-default border-0 chan">Chẵn</a>
+                                                            <a href class="btn btn-default border-0 xoa">Xóa</a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-4">
+                                                        <div class="col-lg-8 col-md-8 d-flex align-content-center unit__number">
+                                                            <span class="label-text mt-2">Đơn vị</span>
+                                                            <div class="d-flex flex-column">
+                                                                <div class="num-list num-list-bo d-flex">
+                                                                    <span>0</span>
+                                                                    <span>1</span>
+                                                                    <span>2</span>
+                                                                    <span class="text-red">3</span>
+                                                                    <span>4</span>
+                                                                    <span class="active">5</span>
+                                                                    <span>6</span>
+                                                                    <span>7</span>
+                                                                    <span>8</span>
+                                                                    <span>9</span>
+                                                                </div>
+                                                                <div class="num-list d-flex">
+                                                                    <span class="fw-bold text-blue">20</span>
+                                                                    <span class="fw-bold text-blue">10</span>
+                                                                    <span class="fw-bold text-blue">15</span>
+                                                                    <span>2</span>
+                                                                    <span>5</span>
+                                                                    <span class="fw-bold text-blue">13</span>
+                                                                    <span class="fw-bold text-blue">39</span>
+                                                                    <span class="fw-bold text-red">0</span>
+                                                                    <span>8</span>
+                                                                    <span class="fw-bold tex-red">1</span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </div>
+        
+                                                        
+                                                        <div class="col-lg-4 col-lg-4 options__unit d-flex flex-wrap">
+                                                            <a href class="btn btn-default border-0 all">Tất cả</a>
+                                                            <a href class="btn btn-default border-0 tai btn-style-1">Tài</a>
+                                                            <a href class="btn btn-default border-0 xiu">Xỉu</a>
+                                                            <a href class="btn btn-default border-0 le">Lẻ</a>
+                                                            <a href class="btn btn-default border-0 chan">Chẵn</a>
+                                                            <a href class="btn btn-default border-0 xoa">Xóa</a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                                
                                         </div>
+                                        <section class="content-wrapper add_number mt-2 bg-color-gray">
+                                            <div class="row align-content-center d-flex">
+                                                <div class="col-lg-4 col-md-4 d-flex align-items-center justify-content-end">
+                                                    <span class="label-tex me-2">Cấp số nhân:</span>
+                                                    <div class="input-number-group">
+                                                        <div class="input-group-button">
+                                                          <span class="input-number-decrement">-</span>
+                                                        </div>
+                                                        <input class="input-number" type="number" value="1" min="0" max="1000">
+                                                        <div class="input-group-button">
+                                                          <span class="input-number-increment">+</span>
+                                                        </div>
+                                                      </div>
+
+                                                </div>
+                                                <div class="col-lg-4 col-md-4 text-center d-flex align-content-center justify-content-center">
+                                                    <span class="lh-lg">Đã chọn: <span class="text-red fw-bold fs-6 red" style="color: #EE5919">10</span> số</span>
+                                                </div>
+                                                <div class="col-lg-4 col-md-4">
+                                                    <span class="lh-lg">Tiền đánh: <span class="text-red fw-bold fs-6 red" style="color: #EE5919">200,000,000</span> VNĐ</span>
+                                                </div>
+                                            </div>
+                                            <div class="button_unit d-flex justify-content-center mt-4">
+                                                <button class="btn btn-default btn-large btn-reset me-3">Đặt lại</button>
+                                                <button class="btn btn-default btn-large btn-add me-3">Thêm cược</button>
+                                                <button class="btn btn-default btn-large btn-quick">Cược nhanh</button>
+                                            </div>
+                                        </section>
+                                        <section class="p-2 list__ndc  mt-2 bg-color-gray">
+                                            <div class="row">
+                                                <h3 class="fs-5 text-center m-3">NỘI DUNG CƯỢC</h3>
+                                                <div class="panel__options">
+                                                    <a id="deleteAll"><i class="bi bi-trash-fill me-2"></i>Xóa Tất Cả</a>
+                                                </div>
+                                            </div>
+                                            <div class="table-responsive">
+                                                <table class="table table-striped table-custom-style table-fixed">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">STT</th>
+                                                            <th scope="col">Tiền cược</th>
+                                                            <th scope="col"><span class="fix-width" data-bs-toggle="tooltip" data-bs-placement="top" title="Số cược">Số cược</span></th>
+                                                            <th scope="col">Tổng cược</th>
+                                                            <th scope="col" width="50"><span class="fix-width" data-bs-toggle="tooltip" data-bs-placement="top" title="Cấp số nhân">X</span></th>
+                                                            <th scope="col">Tiền cược</th>
+                                                            <th scope="col">Tiền thắng/1 lần</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="table-scroll">
+                                                        <tr>
+                                                            <th scope="row">#234567898</th> 
+                                                            <td>234.000.000</td>
+                                                            <td>
+                                                                <span class="fix-width" data-bs-toggle="tooltip" data-bs-placement="top" title="234.000.000">
+                                                                    234.000.000
+                                                                </span>
+                                                            </td>
+                                                            <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                                            <td width="50">x100</td>
+                                                            <td>234.000.000</td>
+                                                            <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">#234567898</th>
+                                                            <td>234.000.000</td>
+                                                            <td>
+                                                                <span class="fix-width" data-bs-toggle="tooltip" data-bs-placement="top" title="234.000.000">
+                                                                    234.000.000
+                                                                </span>
+                                                            </td>
+                                                            <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                                            <td width="50">x100</td>
+                                                            <td>234.000.000</td>
+                                                            <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">#234567898</th>
+                                                            <td>234.000.000</td>
+                                                            <td>
+                                                                <span class="fix-width" data-bs-toggle="tooltip" data-bs-placement="top" title="234.000.000">
+                                                                    234.000.000
+                                                                </span>
+                                                            </td>
+                                                            <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                                            <td width="50">x100</td>
+                                                            <td>234.000.000</td>
+                                                            <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">#234567898</th>
+                                                            <td>234.000.000</td>
+                                                            <td>
+                                                                <span class="fix-width" data-bs-toggle="tooltip" data-bs-placement="top" title="234.000.000">
+                                                                    234.000.000
+                                                                </span>
+                                                            </td>
+                                                            <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                                            <td width="50">x100</td>
+                                                            <td>234.000.000</td>
+                                                            <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">#234567898</th>
+                                                            <td>234.000.000</td>
+                                                            <td>
+                                                                <span class="fix-width" data-bs-toggle="tooltip" data-bs-placement="top" title="234.000.000">
+                                                                    234.000.000
+                                                                </span>
+                                                            </td>
+                                                            <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                                            <td width="50">x100</td>
+                                                            <td>234.000.000</td>
+                                                            <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">#234567898</th>
+                                                            <td>234.000.000</td>
+                                                            <td>
+                                                                <span class="fix-width" data-bs-toggle="tooltip" data-bs-placement="top" title="234.000.000">
+                                                                    234.000.000
+                                                                </span>
+                                                            </td>
+                                                            <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                                            <td width="50">x100</td>
+                                                            <td>234.000.000</td>
+                                                            <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">#234567898</th>
+                                                            <td>234.000.000</td>
+                                                            <td>
+                                                                <span class="fix-width" data-bs-toggle="tooltip" data-bs-placement="top" title="234.000.000">
+                                                                    234.000.000
+                                                                </span>
+                                                            </td>
+                                                            <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                                            <td width="50">x100</td>
+                                                            <td>234.000.000</td>
+                                                            <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">#234567898</th>
+                                                            <td>234.000.000</td>
+                                                            <td>
+                                                                <span class="fix-width" data-bs-toggle="tooltip" data-bs-placement="top" title="234.000.000">
+                                                                    234.000.000
+                                                                </span>
+                                                            </td>
+                                                            <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                                            <td width="50">x100</td>
+                                                            <td>234.000.000</td>
+                                                            <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">#234567898</th>
+                                                            <td>234.000.000</td>
+                                                            <td>
+                                                                <span class="fix-width" data-bs-toggle="tooltip" data-bs-placement="top" title="234.000.000">
+                                                                    234.000.000
+                                                                </span>
+                                                            </td>
+                                                            <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                                            <td width="50">x100</td>
+                                                            <td>234.000.000</td>
+                                                            <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">#234567898</th>
+                                                            <td>234.000.000</td>
+                                                            <td>
+                                                                <span class="fix-width" data-bs-toggle="tooltip" data-bs-placement="top" title="234.000.000">
+                                                                    234.000.000
+                                                                </span>
+                                                            </td>
+                                                            <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                                            <td width="50">x100</td>
+                                                            <td>234.000.000</td>
+                                                            <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">#234567898</th>
+                                                            <td>234.000.000</td>
+                                                            <td>
+                                                                <span class="fix-width" data-bs-toggle="tooltip" data-bs-placement="top" title="234.000.000">
+                                                                    234.000.000
+                                                                </span>
+                                                            </td>
+                                                            <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                                            <td width="50">x100</td>
+                                                            <td>234.000.000</td>
+                                                            <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-lg-5">
+                                                    <span class="lh-lg">Tổng tiền cược: <span class="text-red fw-bold fs-6 red" style="color: #EE5919">200,000,000</span> VNĐ</span>
+                                                </div>
+                                                <div class="col-lg-7 panel_bottom d-flex justify-content-end">
+                                                    <button class="btn btn-default btn-large btn-style-5 me-3">Nuôi</button>
+                                                    <button class="btn btn-default btn-large btn-style-1 btn-advance" data-bs-toggle="modal" data-bs-target="#confirmbit">
+                                                        <span class="fw-bold">Đặt cược</span>
+                                                        <span class="countdown d-flex flex-column align-items-center fs-7">Thời gian còn lại
+                                                            <span class="fw-bold fs-6">00:00:34</span>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </section>
                                     </div>
                                     <div class="col-lg-3 result_loto ps-1 mt-4">
                                         <div class="loto_inner text-center">
@@ -535,6 +1029,87 @@
                                             <div class="button_group d-flex">
                                                 <a class="btn btn-default" href="#" title="Xem kết quả">Xem kết quả</a>
                                                 <a class="btn btn-default" href="#" title="Thống kê cược">Thống kê cược</a>
+                                            </div>
+                                            <div class="table-list">
+                                                <div class="group-list d-flex flex-column justify-content-center align-items-center">
+                                                    <label>10072022-0186</label>
+                                                    <div class="number_result mt-2">
+                                                        <a class="number" href="#">0</a>
+                                                        <a class="number" href="#">1</a>
+                                                        <a class="number" href="#">3</a>
+                                                        <a class="number" href="#">4</a>
+                                                        <a class="number" href="#">5</a>
+                                                    </div>
+                                                </div>
+                                                <div class="group-list d-flex flex-column justify-content-center align-items-center">
+                                                    <label>10072022-0186</label>
+                                                    <div class="number_result mt-2">
+                                                        <a class="number" href="#">0</a>
+                                                        <a class="number" href="#">1</a>
+                                                        <a class="number" href="#">3</a>
+                                                        <a class="number" href="#">4</a>
+                                                        <a class="number" href="#">5</a>
+                                                    </div>
+                                                </div>
+                                                <div class="group-list d-flex flex-column justify-content-center align-items-center">
+                                                    <label>10072022-0186</label>
+                                                    <div class="number_result mt-2">
+                                                        <a class="number" href="#">0</a>
+                                                        <a class="number" href="#">1</a>
+                                                        <a class="number" href="#">3</a>
+                                                        <a class="number" href="#">4</a>
+                                                        <a class="number" href="#">5</a>
+                                                    </div>
+                                                </div>
+                                                <div class="group-list d-flex flex-column justify-content-center align-items-center">
+                                                    <label>10072022-0186</label>
+                                                    <div class="number_result mt-2">
+                                                        <a class="number" href="#">0</a>
+                                                        <a class="number" href="#">1</a>
+                                                        <a class="number" href="#">3</a>
+                                                        <a class="number" href="#">4</a>
+                                                        <a class="number" href="#">5</a>
+                                                    </div>
+                                                </div>
+                                                <div class="group-list d-flex flex-column justify-content-center align-items-center">
+                                                    <label>10072022-0186</label>
+                                                    <div class="number_result mt-2">
+                                                        <a class="number" href="#">0</a>
+                                                        <a class="number" href="#">1</a>
+                                                        <a class="number" href="#">3</a>
+                                                        <a class="number" href="#">4</a>
+                                                        <a class="number" href="#">5</a>
+                                                    </div>
+                                                </div>
+                                                <div class="group-list d-flex flex-column justify-content-center align-items-center">
+                                                    <label>10072022-0186</label>
+                                                    <div class="number_result mt-2">
+                                                        <a class="number" href="#">0</a>
+                                                        <a class="number" href="#">1</a>
+                                                        <a class="number" href="#">3</a>
+                                                        <a class="number" href="#">4</a>
+                                                        <a class="number" href="#">5</a>
+                                                    </div>
+                                                </div>
+                                                <div class="group-list d-flex flex-column justify-content-center align-items-center">
+                                                    <label>10072022-0186</label>
+                                                    <div class="number_result mt-2">
+                                                        <a class="number" href="#">0</a>
+                                                        <a class="number" href="#">1</a>
+                                                        <a class="number" href="#">3</a>
+                                                        <a class="number" href="#">4</a>
+                                                        <a class="number" href="#">5</a>
+                                                    </div>
+                                                </div><div class="group-list d-flex flex-column justify-content-center align-items-center">
+                                                    <label>10072022-0186</label>
+                                                    <div class="number_result mt-2">
+                                                        <a class="number" href="#">0</a>
+                                                        <a class="number" href="#">1</a>
+                                                        <a class="number" href="#">3</a>
+                                                        <a class="number" href="#">4</a>
+                                                        <a class="number" href="#">5</a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -553,39 +1128,166 @@
                                 <a id="deleteAll"><i class="bi bi-arrow-clockwise me-2"></i>Làm mới</a>
                             </div>
                         </div>
-                        <table class="table table-striped table-custom-style">
-                            <thead>
-                                <tr>
-                                    <th scope="col">STT</th>
-                                    <th scope="col">Tiền cược</th>
-                                    <th scope="col">Số cược</th>
-                                    <th scope="col">Tổng cược</th>
-                                    <th scope="col">Cấp số nhân</th>
-                                    <th scope="col">Tiền cược</th>
-                                    <th scope="col">Tiền thắng/1 lần</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">#234567898</th>
-                                    <td>234.000.000</td>
-                                    <td>234.000.000</td>
-                                    <td class="fw-bold" style="color: #EE5919">234.000.000</td>
-                                    <td>x100</td>
-                                    <td>234.000.000</td>
-                                    <td class="fw-bold" style="color: #EE5919">234.000.000</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">#234567898</th>
-                                    <td>234.000.000</td>
-                                    <td>234.000.000</td>
-                                    <td class="fw-bold" style="color: #EE5919">234.000.000</td>
-                                    <td>x100</td>
-                                    <td>234.000.000</td>
-                                    <td class="fw-bold" style="color: #EE5919">234.000.000</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-custom-style table-fixed">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">STT</th>
+                                        <th scope="col">Tiền cược</th>
+                                        <th scope="col"><span class="fix-width" data-bs-toggle="tooltip" data-bs-placement="top" title="Số cược">Số cược</span></th>
+                                        <th scope="col">Tổng cược</th>
+                                        <th scope="col" width="50"><span class="fix-width" data-bs-toggle="tooltip" data-bs-placement="top" title="Cấp số nhân">X</span></th>
+                                        <th scope="col">Tiền cược</th>
+                                        <th scope="col">Tiền thắng/1 lần</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-scroll">
+                                    <tr>
+                                        <th scope="row">#234567898</th> 
+                                        <td>234.000.000</td>
+                                        <td>
+                                            <span class="fix-width" data-bs-toggle="tooltip" data-bs-placement="top" title="234.000.000">
+                                                234.000.000
+                                            </span>
+                                        </td>
+                                        <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                        <td width="50">x100</td>
+                                        <td>234.000.000</td>
+                                        <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">#234567898</th>
+                                        <td>234.000.000</td>
+                                        <td>
+                                            <span class="fix-width" data-bs-toggle="tooltip" data-bs-placement="top" title="234.000.000">
+                                                234.000.000
+                                            </span>
+                                        </td>
+                                        <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                        <td width="50">x100</td>
+                                        <td>234.000.000</td>
+                                        <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">#234567898</th>
+                                        <td>234.000.000</td>
+                                        <td>
+                                            <span class="fix-width" data-bs-toggle="tooltip" data-bs-placement="top" title="234.000.000">
+                                                234.000.000
+                                            </span>
+                                        </td>
+                                        <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                        <td width="50">x100</td>
+                                        <td>234.000.000</td>
+                                        <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">#234567898</th>
+                                        <td>234.000.000</td>
+                                        <td>
+                                            <span class="fix-width" data-bs-toggle="tooltip" data-bs-placement="top" title="234.000.000">
+                                                234.000.000
+                                            </span>
+                                        </td>
+                                        <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                        <td width="50">x100</td>
+                                        <td>234.000.000</td>
+                                        <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">#234567898</th>
+                                        <td>234.000.000</td>
+                                        <td>
+                                            <span class="fix-width" data-bs-toggle="tooltip" data-bs-placement="top" title="234.000.000">
+                                                234.000.000
+                                            </span>
+                                        </td>
+                                        <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                        <td width="50">x100</td>
+                                        <td>234.000.000</td>
+                                        <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">#234567898</th>
+                                        <td>234.000.000</td>
+                                        <td>
+                                            <span class="fix-width" data-bs-toggle="tooltip" data-bs-placement="top" title="234.000.000">
+                                                234.000.000
+                                            </span>
+                                        </td>
+                                        <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                        <td width="50">x100</td>
+                                        <td>234.000.000</td>
+                                        <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">#234567898</th>
+                                        <td>234.000.000</td>
+                                        <td>
+                                            <span class="fix-width" data-bs-toggle="tooltip" data-bs-placement="top" title="234.000.000">
+                                                234.000.000
+                                            </span>
+                                        </td>
+                                        <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                        <td width="50">x100</td>
+                                        <td>234.000.000</td>
+                                        <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">#234567898</th>
+                                        <td>234.000.000</td>
+                                        <td>
+                                            <span class="fix-width" data-bs-toggle="tooltip" data-bs-placement="top" title="234.000.000">
+                                                234.000.000
+                                            </span>
+                                        </td>
+                                        <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                        <td width="50">x100</td>
+                                        <td>234.000.000</td>
+                                        <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">#234567898</th>
+                                        <td>234.000.000</td>
+                                        <td>
+                                            <span class="fix-width" data-bs-toggle="tooltip" data-bs-placement="top" title="234.000.000">
+                                                234.000.000
+                                            </span>
+                                        </td>
+                                        <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                        <td width="50">x100</td>
+                                        <td>234.000.000</td>
+                                        <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">#234567898</th>
+                                        <td>234.000.000</td>
+                                        <td>
+                                            <span class="fix-width" data-bs-toggle="tooltip" data-bs-placement="top" title="234.000.000">
+                                                234.000.000
+                                            </span>
+                                        </td>
+                                        <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                        <td width="50">x100</td>
+                                        <td>234.000.000</td>
+                                        <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">#234567898</th>
+                                        <td>234.000.000</td>
+                                        <td>
+                                            <span class="fix-width" data-bs-toggle="tooltip" data-bs-placement="top" title="234.000.000">
+                                                234.000.000
+                                            </span>
+                                        </td>
+                                        <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                        <td width="50">x100</td>
+                                        <td>234.000.000</td>
+                                        <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </section>
                 </div>
             </div>
@@ -707,43 +1409,123 @@
             </div>
         </div>
     </footer>
-    <div class="modal fade" id="confirmWidthDraw" tabindex="-1" aria-labelledby="confirmWidthDrawModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+    <div class="modal fade" id="confirmbit" tabindex="-1" aria-labelledby="confirmbitModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="confirmWidthDrawModalLabel">XÁC NHẬN RÚT TIỀN</h5>
+                <div class="modal-header py-3">
+                    <h5 class="modal-title fs-6 text-uppercase" id="confirmbitModalLabel">Xác nhận</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body justify-content-center text-center p-0">
-                    <div class="popup-content bg-color-gray p-4">
+                <div class="modal-body justify-content-center p-0">
+                    <div class="popup-content p-3">
                         <div class="wrap">
-                            <form class="form-group">
-                                <div class="form-group text-center">
-                                    <label for="soTienRut" class=" col-form-label">Số tiền rút</label>
-                                    <div class="input-group bg-white p-2 d-flex justify-content-center">
-                                        <span><strong>1.000.000.000</strong></span>
-                                    </div>
-                                </div>
-                                <div class="form-group text-center">
-                                    <label for="soTienRut" class=" col-form-label">Thông tin nhận tiền</label>
-                                    <ul class="bank-account-info nav">
-                                        <li>Tên tài khoản: <span class="text-bold">Nguyễn Vân Anh</span></li>
-                                        <li>Ngân hàng: <span class="text">Ngân hàng nhà nước Việt Nam</span></li>
-                                        <li>Số tài khoản: <span class="text-bold">45456464747788</span></li>
-                                        <li>Chi nhánh: <span class="text">Chi nhánh</span></li>
-                                    </ul>
-                                </div>
-                                
-                                <div class="form-group justify-content-center mt-4">
-                                    <button type="button" class="btn btn-primary btn-style-1" data-bs-dismiss="modal" aria-label="Close">Đóng</button>
-                                    <button type="submit" class="btn btn-primary btn-style-3 ms-3">Xác nhận</button>
-                                </div>
-                                <!-- <p class="red">Chọn phương thức xác thực khác<br/><span class="blue">Mất số điện thoại OTP</span></p>
-                                <p>Chưa có tài khoản? <b class="red">Đăng ký</b></p> -->
-                            </form>
-
+                            <span class="pb-3 d-block"><i class="bi bi-question-circle color-red fs-5 me-2"></i> Bạn có chắc cược?</span>
+                            <div class="table-responsive">
+                                <table class="table table-striped table-custom-style table-fixed">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Tên cược</th>
+                                            <th scope="col">Số cược</th>
+                                            <!-- <th scope="col"><span class="fix-width" data-bs-toggle="tooltip" data-bs-placement="top" title="Số cược">Số cược</span></th> -->
+                                            <th scope="col">Tổng cược</th>
+                                            <th scope="col">Cấp số nhân</th>
+                                            <th scope="col">Tiền cược</th>
+                                            <th scope="col">Tiền thắng/1 lần</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="table-scroll">
+                                        <tr>
+                                            <th scope="row">[Bao lô - Lô 2 số]</th> 
+                                            <td>7|7</td>
+                                            <!-- <td>
+                                                <span class="fix-width" data-bs-toggle="tooltip" data-bs-placement="top" title="234.000.000">
+                                                    234.000.000
+                                                </span>
+                                            </td> -->
+                                            <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                            <td>x100</td>
+                                            <td>234.000.000</td>
+                                            <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">[Bao lô - Lô 2 số]</th> 
+                                            <td>7|7</td>
+                                            <!-- <td>
+                                                <span class="fix-width" data-bs-toggle="tooltip" data-bs-placement="top" title="234.000.000">
+                                                    234.000.000
+                                                </span>
+                                            </td> -->
+                                            <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                            <td>x100</td>
+                                            <td>234.000.000</td>
+                                            <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">[Bao lô - Lô 2 số]</th> 
+                                            <td>7|7</td>
+                                            <!-- <td>
+                                                <span class="fix-width" data-bs-toggle="tooltip" data-bs-placement="top" title="234.000.000">
+                                                    234.000.000
+                                                </span>
+                                            </td> -->
+                                            <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                            <td>x100</td>
+                                            <td>234.000.000</td>
+                                            <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">[Bao lô - Lô 2 số]</th> 
+                                            <td>7|7</td>
+                                            <!-- <td>
+                                                <span class="fix-width" data-bs-toggle="tooltip" data-bs-placement="top" title="234.000.000">
+                                                    234.000.000
+                                                </span>
+                                            </td> -->
+                                            <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                            <td>x100</td>
+                                            <td>234.000.000</td>
+                                            <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">[Bao lô - Lô 2 số]</th> 
+                                            <td>7|7</td>
+                                            <!-- <td>
+                                                <span class="fix-width" data-bs-toggle="tooltip" data-bs-placement="top" title="234.000.000">
+                                                    234.000.000
+                                                </span>
+                                            </td> -->
+                                            <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                            <td>x100</td>
+                                            <td>234.000.000</td>
+                                            <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">[Bao lô - Lô 2 số]</th> 
+                                            <td>7|7</td>
+                                            <!-- <td>
+                                                <span class="fix-width" data-bs-toggle="tooltip" data-bs-placement="top" title="234.000.000">
+                                                    234.000.000
+                                                </span>
+                                            </td> -->
+                                            <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                            <td>x100</td>
+                                            <td>234.000.000</td>
+                                            <td class="fw-bold" style="color: #EE5919">234.000.000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="m-0 color-gray">Đơn cược này có vé cược ít hơn 1% tổng số cược. Bạn có chắc chắn muốn cược hay không?</p>
                         </div>
                     </div>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <span class="pull-left">Tổng số tiền đặt cược: <span class="text-red fw-bold fs-6 red" style="color: #EE5919">200,000,000</span> VNĐ</span>
+                    <div class="btn_group">
+                        <button type="submit" class="btn btn-large btn-style-1 me-2">Xác nhận</button>
+                        <button type="button" class="btn btn-large btn-gray" data-bs-dismiss="modal" aria-label="Close">Đóng</button>
+                    </div>
+                    
                 </div>
             </div>
         </div>
