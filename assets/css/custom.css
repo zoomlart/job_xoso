@@ -484,6 +484,65 @@ ul.menu-footer {
           background-image: url(../img/mien-trung.png); }
         .left-sidebar .sidebar-content .categories-list li a .icon.mien-nam {
           background-image: url(../img/mien-nam.png); }
+    .left-sidebar .sidebar-content .categories-list li.dropdown > a::before {
+      content: "\F284";
+      font-family: bootstrap-icons !important;
+      position: absolute;
+      right: 30px; }
+    .left-sidebar .sidebar-content .categories-list li.dropdown > a.show::after {
+      content: url(../img/icon/arrow_right.png);
+      position: absolute;
+      right: -2px;
+      top: 10px;
+      z-index: 10000; }
+    .left-sidebar .sidebar-content .categories-list li .dropdown-menu {
+      left: 100% !important;
+      min-width: 320px;
+      background-color: #E8E8E8;
+      top: 0 !important;
+      border-radius: 0px 10px 10px 0px;
+      transform: none !important;
+      padding: 15px 0; }
+      .left-sidebar .sidebar-content .categories-list li .dropdown-menu li {
+        padding: 2px 15px; }
+        .left-sidebar .sidebar-content .categories-list li .dropdown-menu li a {
+          background-color: #2B2D48;
+          border-radius: 35px 5px 5px 35px;
+          padding: 5px; }
+          .left-sidebar .sidebar-content .categories-list li .dropdown-menu li a img {
+            margin-right: 15px; }
+          .left-sidebar .sidebar-content .categories-list li .dropdown-menu li a:hover {
+            background: #FEC36B; }
+    .left-sidebar .sidebar-content .categories-list li .mega-menu.dropdown-menu {
+      width: 700px;
+      padding: 15px; }
+      .left-sidebar .sidebar-content .categories-list li .mega-menu.dropdown-menu .mega-menu-wrap {
+        background: #2B2D48;
+        border-radius: 5px; }
+        .left-sidebar .sidebar-content .categories-list li .mega-menu.dropdown-menu .mega-menu-wrap .megamenu-list {
+          border-radius: 5px;
+          overflow: hidden; }
+          .left-sidebar .sidebar-content .categories-list li .mega-menu.dropdown-menu .mega-menu-wrap .megamenu-list .menu-item {
+            padding: 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+            .left-sidebar .sidebar-content .categories-list li .mega-menu.dropdown-menu .mega-menu-wrap .megamenu-list .menu-item:last-child {
+              border-bottom: 0 none; }
+            .left-sidebar .sidebar-content .categories-list li .mega-menu.dropdown-menu .mega-menu-wrap .megamenu-list .menu-item .day {
+              width: 50px;
+              background-color: #4148B5;
+              display: block;
+              text-align: center;
+              color: #fff;
+              padding: 10px 0; }
+            .left-sidebar .sidebar-content .categories-list li .mega-menu.dropdown-menu .mega-menu-wrap .megamenu-list .menu-item .menu-item-list {
+              width: calc(100% - 50px); }
+              .left-sidebar .sidebar-content .categories-list li .mega-menu.dropdown-menu .mega-menu-wrap .megamenu-list .menu-item .menu-item-list a {
+                width: 33.3333%;
+                padding: 10px 15px;
+                border-radius: 0; }
+                .left-sidebar .sidebar-content .categories-list li .mega-menu.dropdown-menu .mega-menu-wrap .megamenu-list .menu-item .menu-item-list a:hover {
+                  background-color: transparent;
+                  color: #FEC36B !important; }
   .left-sidebar .sidebar-content .categories-list2 {
     padding: 0 30px; }
     @media (max-width: 1399px) {
@@ -594,11 +653,9 @@ ul.menu-footer {
     text-transform: uppercase;
     font-size: 20px; }
 
-.categories-list a.active, .categories-list a:hover {
+.categories-list a.active, .categories-list a.show, .categories-list a:hover {
   background-color: #FEC36B;
   color: #3B3B3B !important; }
-  .categories-list a.active .icon, .categories-list a:hover .icon {
-    filter: invert(0) sepia(0) saturate(0) hue-rotate(0) brightness(0) contrast(80%); }
 .categories-list a .icon.icon_cat_account_02 {
   background-image: url(../img/icon/icon_cat_accout_white.png); }
 .categories-list a .icon.icon_cat_au_02 {
