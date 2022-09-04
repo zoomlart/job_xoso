@@ -1024,6 +1024,9 @@ ul.menu-footer {
 /*================ THÔNG BÁO ==================*/
 .notification-page .icon_head_notification {
   background-image: url(../img/icon/icon_notification.png); }
+/*================ FAQS ==================*/
+.faqs-page .icon_head_faqs {
+  background-image: url(../img/icon/icon_faqs.png); }
 /*================ THÔNG BÁO ==================*/
 .napTien-info #fastPayment .nav li .nav-link.active {
   background-color: #7740EC; }

@@ -1452,7 +1452,12 @@ ul.menu-footer {
         background-image: url(../img/icon/icon_notification.png);
     }
 }
-
+/*================ FAQS ==================*/
+@at-root .faqs-page {
+    .icon_head_faqs {
+        background-image: url(../img/icon/icon_faqs.png);
+    }
+}
 /*================ THÔNG BÁO ==================*/
 @at-root .napTien-info {
     // #fastPayment-tab{
