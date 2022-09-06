@@ -979,6 +979,18 @@ ul.menu-footer {
     background: linear-gradient(180deg, #FF9052 0%, #FB5520 100%); }
     .button_unit .btn.btn-quick::before {
       background-image: url(../img/icon/icon_button_orange.png); }
+  .button_unit .btn.btn-cao {
+    background: linear-gradient(180deg, #52ACFF 0%, #1660CF 100%); }
+    .button_unit .btn.btn-cao::before {
+      background-image: url(../img/icon/icon_cao.png); }
+  .button_unit .btn.btn-huychon {
+    background: linear-gradient(180deg, #FF9052 0%, #FB5520 100%); }
+    .button_unit .btn.btn-huychon::before {
+      background-image: url(../img/icon/icon_huy.png); }
+  .button_unit .btn.btn-caoall {
+    background: linear-gradient(180deg, #9E52FF 0%, #6620FB 100%); }
+    .button_unit .btn.btn-caoall::before {
+      background-image: url(../img/icon/icon_hand.png); }
 
 .list__ndc {
   position: relative; }
@@ -1684,5 +1696,79 @@ ul.nav.list-dk li {
   margin: 3px 1px;
   color: #363636;
   padding: 0; }
+
+.lucky-page .lucky-content .lucky-item .card {
+  background-color: transparent;
+  border-radius: 6px;
+  overflow: hidden; }
+  .lucky-page .lucky-content .lucky-item .card .card-header {
+    padding-top: 50px;
+    background-image: url(../img/icon/card_head_bg.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .lucky-page .lucky-content .lucky-item .card .card-header .series-number {
+      background: linear-gradient(#000, #000) padding-box, linear-gradient(to right, #29A5BB, #F32499) border-box;
+      border-radius: 50em;
+      border: 2px solid transparent;
+      padding: 2px 10px;
+      color: #fff; }
+  .lucky-page .lucky-content .lucky-item .card .card-body .reward .price {
+    background: linear-gradient(180deg, #FF1010 0%, #CC0101 100%);
+    border-radius: 30px;
+    color: #FFE926;
+    padding: 5px 10px; }
+  .lucky-page .lucky-content .lucky-item .card .card-body .ticket-scratch {
+    border: 2px dashed red;
+    padding: 5px; }
+    .lucky-page .lucky-content .lucky-item .card .card-body .ticket-scratch .right-part,
+    .lucky-page .lucky-content .lucky-item .card .card-body .ticket-scratch .left-part {
+      display: grid;
+      grid-auto-columns: 1fr;
+      grid-auto-rows: auto;
+      grid-column-gap: 6px;
+      grid-row-gap: 6px;
+      grid-template-columns: 1fr 1fr 1fr 1fr; }
+      .lucky-page .lucky-content .lucky-item .card .card-body .ticket-scratch .right-part .left-part-item,
+      .lucky-page .lucky-content .lucky-item .card .card-body .ticket-scratch .right-part .right-part-item,
+      .lucky-page .lucky-content .lucky-item .card .card-body .ticket-scratch .left-part .left-part-item,
+      .lucky-page .lucky-content .lucky-item .card .card-body .ticket-scratch .left-part .right-part-item {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+    .lucky-page .lucky-content .lucky-item .card .card-body .ticket-scratch .left-part {
+      width: 70%;
+      padding-right: 5px;
+      border-right: 2px dashed red; }
+    .lucky-page .lucky-content .lucky-item .card .card-body .ticket-scratch .right-part {
+      grid-template-columns: 1fr 1fr;
+      width: 30%;
+      padding-left: 5px; }
+    .lucky-page .lucky-content .lucky-item .card .card-body .ticket-scratch .star-bg {
+      background-image: url(../img/icon/icon_star_lg.png);
+      width: 100%;
+      height: 36px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: relative;
+      display: block; }
+  .lucky-page .lucky-content .lucky-item .card .card-footer {
+    background-color: #fff; }
+    .lucky-page .lucky-content .lucky-item .card .card-footer .ticket-prize .ticket-prize-left {
+      width: 70%; }
+      .lucky-page .lucky-content .lucky-item .card .card-footer .ticket-prize .ticket-prize-left .label {
+        font-size: 14px; }
+      .lucky-page .lucky-content .lucky-item .card .card-footer .ticket-prize .ticket-prize-left .price {
+        font-size: 20px;
+        font-weight: bold;
+        color: red; }
+    .lucky-page .lucky-content .lucky-item .card .card-footer .ticket-prize .ticket-prize-right {
+      border-radius: 6px;
+      width: 30%;
+      background-image: url(../img/icon/metal.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      min-height: 100%; }
 
 /*# sourceMappingURL=custom.css.map */

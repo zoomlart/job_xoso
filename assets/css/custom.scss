@@ -1394,6 +1394,24 @@ ul.menu-footer {
                         background-image: url(../img/icon/icon_button_orange.png);
                     }
                 }
+                &.btn-cao{
+                    background: linear-gradient(180deg, #52ACFF 0%, #1660CF 100%);
+                    &::before{
+                        background-image: url(../img/icon/icon_cao.png);
+                    }
+                }
+                &.btn-huychon{
+                    background: linear-gradient(180deg, #FF9052 0%, #FB5520 100%);
+                    &::before{
+                        background-image: url(../img/icon/icon_huy.png);
+                    }
+                }
+                &.btn-caoall{
+                    background: linear-gradient(180deg, #9E52FF 0%, #6620FB 100%);
+                    &::before{
+                        background-image: url(../img/icon/icon_hand.png);
+                    }
+                }
             }
         }
         .list__ndc{
@@ -2400,3 +2418,4 @@ ul.nav.list-dk{
     }
 }
 @import "xosovip";
+@import "lucky";
