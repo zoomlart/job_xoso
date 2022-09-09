@@ -1586,9 +1586,9 @@ ul.menu-footer {
     background-color: #232157;
     position: sticky;
     top: 0;
-    z-index: 100000;
+    z-index: 1000;
     @include MediaQuery($sml) {
-        z-index: 1000000;
+        z-index: 1000;
     }
 
     .container {

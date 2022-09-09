@@ -1096,10 +1096,10 @@ ul.menu-footer {
   background-color: #232157;
   position: sticky;
   top: 0;
-  z-index: 100000; }
+  z-index: 1000; }
   @media (max-width: 991px) {
     .user__auth {
-      z-index: 1000000; } }
+      z-index: 1000; } }
   @media (max-width: 1600px) {
     .user__auth .container {
       width: 100%;
