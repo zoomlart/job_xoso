@@ -631,6 +631,7 @@ ul.menu-footer {
                             position: absolute;
                             right: 30px;
                         }
+                        &:hover::after,
                         &.show::after{
                             content: url(../img/icon/arrow_right.png);
                             position: absolute;
@@ -638,6 +639,9 @@ ul.menu-footer {
                             top: 10px;
                             z-index: 10000;
                         }
+                    }
+                    &:hover .dropdown-menu{
+                        display: block;
                     }
                 }
                 .dropdown-menu{

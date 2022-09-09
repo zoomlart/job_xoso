@@ -489,12 +489,14 @@ ul.menu-footer {
       font-family: bootstrap-icons !important;
       position: absolute;
       right: 30px; }
-    .left-sidebar .sidebar-content .categories-list li.dropdown > a.show::after {
+    .left-sidebar .sidebar-content .categories-list li.dropdown > a:hover::after, .left-sidebar .sidebar-content .categories-list li.dropdown > a.show::after {
       content: url(../img/icon/arrow_right.png);
       position: absolute;
       right: -2px;
       top: 10px;
       z-index: 10000; }
+    .left-sidebar .sidebar-content .categories-list li.dropdown:hover .dropdown-menu {
+      display: block; }
     .left-sidebar .sidebar-content .categories-list li .dropdown-menu {
       left: 100% !important;
       min-width: 320px;
