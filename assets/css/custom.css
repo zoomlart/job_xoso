@@ -70,6 +70,10 @@ div#digital-clock {
 header.bg-light.slide-top {
   overflow: hidden; }
 
+@media (max-width: 768px) {
+  .carousel-indicators {
+    margin-bottom: 0; } }
+
 .slide-top .carousel-indicators button {
   width: 16px;
   height: 16px;
@@ -78,6 +82,10 @@ header.bg-light.slide-top {
   margin-right: 5px;
   background-color: #14162C;
   opacity: 1; }
+  @media (max-width: 768px) {
+    .slide-top .carousel-indicators button {
+      width: 8px;
+      height: 8px; } }
 
 .slide-top .carousel-indicators button.active {
   background-color: #FFECA9; }
