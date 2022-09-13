@@ -263,7 +263,7 @@ body{
     background-color: #FFD9AD;
     padding: 72px 45px 0;
     border-radius: 10px;
-    margin-top: 26px;
+    margin-top: 50px;
     position: relative;
 }
 
@@ -660,6 +660,13 @@ ul.menu-footer {
                     border-radius: 0px 10px 10px 0px;   
                     transform: none!important;
                     padding: 15px 0;
+                    @include MediaQuery($sml){
+                        position: relative!important;
+                        left: 0 !important;
+                        min-width: 100%!important;
+                        top: 100% !important;
+                        border-radius: 0;
+                    }
                     li{
                         padding: 2px 15px;
                         a{
@@ -679,6 +686,9 @@ ul.menu-footer {
                     &.dropdown-menu{
                         width: 700px;
                         padding: 15px;
+                        @include MediaQuery($sml){
+                            width: 100%!important;
+                        }
                         .mega-menu-wrap{
                             background: #2B2D48;
                             border-radius: 5px;
@@ -698,9 +708,15 @@ ul.menu-footer {
                                         text-align: center;
                                         color: #fff;
                                         padding: 10px 0;
+                                        @include MediaQuery($sml){
+                                            width: 100%;
+                                        }
                                     }
                                     .menu-item-list{
                                         width: calc(100% - 50px);
+                                        @include MediaQuery($sml){
+                                            width: 100%;
+                                        }
                                         a{
                                             width: 33.3333%;
                                             padding: 10px 15px;
@@ -708,6 +724,9 @@ ul.menu-footer {
                                             &:hover{
                                                 background-color: transparent;
                                                 color: #FEC36B!important;
+                                            }
+                                            @include MediaQuery($sml){
+                                                width: 100%;
                                             }
                                         }
                                     }
