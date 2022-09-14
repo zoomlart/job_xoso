@@ -648,9 +648,12 @@ ul.menu-footer {
                             z-index: 10000;
                         }
                     }
-                    &:hover .dropdown-menu{
-                        display: block;
+                    @media(min-width: 992px){
+                        &:hover .dropdown-menu{
+                            display: block;
+                        }
                     }
+                    
                 }
                 .dropdown-menu{
                     left: 100%!important;

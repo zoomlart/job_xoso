@@ -503,8 +503,9 @@ ul.menu-footer {
       right: -2px;
       top: 10px;
       z-index: 10000; }
-    .left-sidebar .sidebar-content .categories-list li.dropdown:hover .dropdown-menu {
-      display: block; }
+    @media (min-width: 992px) {
+      .left-sidebar .sidebar-content .categories-list li.dropdown:hover .dropdown-menu {
+        display: block; } }
     .left-sidebar .sidebar-content .categories-list li .dropdown-menu {
       left: 100% !important;
       min-width: 320px;
