@@ -604,7 +604,9 @@ ul.menu-footer {
                 height: 30px;
                 display: block;
                 margin-right: 10px;
-
+                &.home {
+                    background-image: url(../img/icon_home.png);
+                }
                 &.livestream {
                     background-image: url(../img/livetream.png);
                 }

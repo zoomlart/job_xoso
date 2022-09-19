@@ -479,6 +479,8 @@ ul.menu-footer {
       height: 30px;
       display: block;
       margin-right: 10px; }
+      .categories-list li a .icon.home {
+        background-image: url(../img/icon/icon_home.png); }
       .categories-list li a .icon.livestream {
         background-image: url(../img/livetream.png); }
       .categories-list li a .icon.xo-so-vip {
