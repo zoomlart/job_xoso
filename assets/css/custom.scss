@@ -979,6 +979,9 @@ ul.menu-footer {
                 // }
             }
             .icon {
+                &.icon_home {
+                    background-image: url(../img/icon/icon_home.png);
+                }
                 &.icon_cat_account_02 {
                     background-image: url(../img/icon/icon_cat_accout_white.png);
                 }
