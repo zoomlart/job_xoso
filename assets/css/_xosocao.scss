@@ -1,0 +1,90 @@
+.xoso-cao-page{
+    .form-control-wrapper{
+        margin-bottom: 30px;
+        .form-check{
+            padding-left: 0;
+        }
+        .form-check-input{
+            width: 24px;
+            height: 24px;
+            margin: 0;
+        }
+        .form-check-label{
+            margin-left: 10px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+    }
+}
+.xoso-cao-item{
+    .card-header{
+        background-image: url(../img/head-box-02.png);
+        background-position: top left;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 10px 10px 5px;
+        .item-ticket_top_title {
+            font-size: 18px;
+            color: #fff;
+            width: 50%;
+            line-height: 1.25;
+            background-color: rgba(0,0,0,0.4);
+            border-radius: 5px;
+            padding: 5px 15px;
+        }
+        .item-ticket_top_price{
+            background: linear-gradient(180deg, #FFCA42 0%, #CC6201 100%);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            padding: 5px 20px;
+            display: inline-block;
+            border-radius: 30px;
+            font-size: 18px;
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+    .card-body{
+        .reward{
+            text-align: center;
+            .label{
+                font-size: 12px;
+                font-weight: bold;
+                color: #202020;
+            }
+            .price{
+                color: #FF1818;
+                font-weight: bold;
+                font-size: 18px;
+            }
+        }
+        .ticket-scratch{
+            background: linear-gradient(180deg, #FF2222 0%, #BF0404 100%);
+            padding: 6px 20px;
+            border-radius: 30px;
+            .star-bg{
+                width: 40px;
+                height: 40px;
+                background-image: url(../img/icon/icon_star-yellow.png);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+    .card-footer{
+        .ticket__bottom__ticket{
+            padding: 10px 10px 15px;
+            border: 2px dashed #FF1818;
+            border-radius: 5px;
+            .label{
+                color: #FF1818;
+                font-size: 18px;
+            }
+            .form-check-input{
+                width: 24px;
+                height: 24px;
+                border: 1px solid #FF1818;
+            }
+        }
+    }
+}   
