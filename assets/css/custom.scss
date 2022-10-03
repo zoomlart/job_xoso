@@ -1,3 +1,4 @@
+$lg-screen: 1920px;
 $desktop: 1600px;
 $laptop: 1399px;
 $lg: 1024px;
@@ -8,6 +9,11 @@ $input-number-size: 80px;
 @mixin MediaQuery($type) {
     @media(max-width:$type) {
         @content;
+    }
+}
+.container{
+    @include MediaQuery($lg-screen){
+        max-width: 100%;
     }
 }
 .color-red{
@@ -120,7 +126,7 @@ header.bg-light.slide-top {
     align-items: center;
 
     .container {
-        @include MediaQuery($laptop) {
+        @include MediaQuery($lg-screen) {
             width: 100%;
             max-width: 100%;
         }
@@ -220,7 +226,7 @@ body{
   }
 /*================= MAIN ===================*/
 .main>.container {
-    @include MediaQuery($laptop) {
+    @include MediaQuery($lg-screen) {
         width: 100%;
         max-width: 100%;
         overflow: hidden;
@@ -512,6 +518,8 @@ ul.menu-footer {
 }
 
 .left-sidebar {
+    max-width: 280px;
+    padding: 0;
     .navbar-toggler {
 
         @include MediaQuery($sml) {
@@ -576,7 +584,10 @@ ul.menu-footer {
     }
 }
 
-
+.main-content {
+    width: calc(100% - 280px);
+    padding: 0 20px;
+}
 .categories-list {
     list-style: none;
     padding: 0;
@@ -759,7 +770,7 @@ ul.menu-footer {
 .topmenu-nav{
     background-color: #21203D;
     .container {
-        @include MediaQuery($desktop) {
+        @include MediaQuery($lg-screen) {
             width: 100%;
             max-width: 100%;
             padding: 0 15px;
@@ -1615,7 +1626,7 @@ ul.menu-footer {
 
         th {
             color: #fff;
-            font-weight: 500;
+            font-weight: bold;
         }
     }
 
@@ -1689,7 +1700,7 @@ ul.menu-footer {
     }
 
     .container {
-        @include MediaQuery($desktop) {
+        @include MediaQuery($lg-screen) {
             width: 100%;
             max-width: 100%;
             padding: 0 15px;
@@ -2424,6 +2435,37 @@ ul.nav.list-dk{
 
             .input {
                 width: 100%;
+                &:before {
+                    content: "";
+                    width: 24px;
+                    height: 24px;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 10px;
+                }
+                &.user-icon:before{
+                    background-image: url(../img/icon_user2.png);
+                }
+                &.pass-icon:before {
+                    background-image: url(../img/icon_key.png);
+                }
+                
+            }
+            .pass-icon{
+                .form-control{
+                    padding-right: 40px;
+                }
+                .icon_eyes{
+                    position: absolute;
+                    width: 24px;
+                    height: 24px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 10px;
+                    color: #393683;
+                    font-size: 16px;
+                }
             }
         }
 
@@ -2445,14 +2487,6 @@ ul.nav.list-dk{
 
             &::-webkit-input-placeholder {
                 color: rgba(255, 255, 255, 0.6) !important;
-            }
-
-            &#username {
-                background-image: url(../img/icon_user2.png);
-            }
-
-            &#upw {
-                background-image: url(../img/icon_key.png);
             }
         }
 
