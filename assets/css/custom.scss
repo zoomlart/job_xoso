@@ -1,4 +1,5 @@
-$lg-screen: 2400px;
+$xxl-desktop: 2580px;
+$lg-screen: 2048px;
 $desktop: 1600px;
 $laptop: 1399px;
 $lg: 1024px;
@@ -12,6 +13,9 @@ $input-number-size: 80px;
     }
 }
 .container{
+    @include MediaQuery($xxl-desktop){
+        max-width: 1920px;
+    }
     @include MediaQuery($lg-screen){
         max-width: 100%;
     }
