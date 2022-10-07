@@ -524,6 +524,10 @@ ul.menu-footer {
 .left-sidebar {
     max-width: 280px;
     padding: 0;
+    @include MediaQuery($sml){
+        width: auto;
+        max-width: auto;
+    }
     .navbar-toggler {
 
         @include MediaQuery($sml) {
@@ -591,6 +595,9 @@ ul.menu-footer {
 .main-content {
     width: calc(100% - 280px);
     padding: 0 20px;
+    @include MediaQuery($sml){
+        width: 100%;
+    }
 }
 .categories-list {
     list-style: none;
@@ -1194,6 +1201,8 @@ ul.menu-footer {
 
                     img {
                         max-width: 120px;
+                        border-radius: 50%;
+                        border: 2px solid #6620FB;
                     }
 
                     .icon_camera {
@@ -1251,7 +1260,24 @@ ul.menu-footer {
                 }
 
             }
+            .gifbox-section{
+                margin-top: 10px;
+                // padding: 30px;
+                background-color: #F2F1FE;
 
+                .icon_head_donation {
+                    background-image: url(../img/icon/donation.png);
+                }
+            }
+            .about-section{
+                margin-top: 10px;
+                // padding: 30px;
+                background-color: #F2F1FE;
+
+                .icon_head_about {
+                    background-image: url(../img/icon/information-button.png);
+                }
+            }
             .phone-info {
 
                 margin-top: 10px;
@@ -2313,13 +2339,15 @@ ul.nav.list-dk{
     //    padding: 30px  ;
         &::before{
             content: "";
-            background-image: url(../img/icon/icon_stiker.png);
+            background-image: url(../img/icon/icon_cup_no1.png);
             background-repeat: no-repeat;
             background-position: center;
             position: absolute;
             width: 64px;
             height: 56px;
             background-size: contain;
+            left: 10px;
+            top: 10px;
         }
         
         .head{
@@ -2334,7 +2362,7 @@ ul.nav.list-dk{
         .content{
             padding: 15px;
             li{
-                width: 25%;
+                width: 64px;
                 img{
                     width: 100%;
                 }
@@ -2344,14 +2372,14 @@ ul.nav.list-dk{
     .num2{
         .wrap{
             &::before{
-                background-image: url(../img/icon/icon_stiker2.png);
+                background-image: url(../img/icon/icon_cup_no2.png);
             }
         }
     }
     .num3{
         .wrap{
             &::before{
-                background-image: url(../img/icon/icon_stiker3.png);
+                background-image: url(../img/icon/icon_cup_no3.png);
             }
         }
     }
@@ -2393,7 +2421,7 @@ ul.nav.list-dk{
             }
             .right{
                 .item{
-                    width: 25%;
+                    max-width: 48px;
                 }
             }
         }

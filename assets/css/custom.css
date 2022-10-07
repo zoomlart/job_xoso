@@ -426,6 +426,10 @@ ul.menu-footer {
   max-width: 280px;
   padding: 0; }
   @media (max-width: 991px) {
+    .left-sidebar {
+      width: auto;
+      max-width: auto; } }
+  @media (max-width: 991px) {
     .left-sidebar .navbar-toggler {
       top: 50%;
       transition: all 1s;
@@ -470,6 +474,9 @@ ul.menu-footer {
 .main-content {
   width: calc(100% - 280px);
   padding: 0 20px; }
+  @media (max-width: 991px) {
+    .main-content {
+      width: 100%; } }
 
 .categories-list {
   list-style: none;
@@ -851,7 +858,9 @@ ul.menu-footer {
     display: flex;
     justify-content: center; }
     .account-content .tab-content .avatar__change .avatar-img img {
-      max-width: 120px; }
+      max-width: 120px;
+      border-radius: 50%;
+      border: 2px solid #6620FB; }
     .account-content .tab-content .avatar__change .avatar-img .icon_camera {
       background-image: url(../img/icon/icon_camera.png);
       background-repeat: no-repeat;
@@ -890,6 +899,16 @@ ul.menu-footer {
       background-image: url(../img/icon/icon_head_account.png); }
     .account-content .tab-content .heading .icon.icon_nickname {
       background-image: url(../img/icon_nickname.png); }
+.account-content .tab-content .gifbox-section {
+  margin-top: 10px;
+  background-color: #F2F1FE; }
+  .account-content .tab-content .gifbox-section .icon_head_donation {
+    background-image: url(../img/icon/donation.png); }
+.account-content .tab-content .about-section {
+  margin-top: 10px;
+  background-color: #F2F1FE; }
+  .account-content .tab-content .about-section .icon_head_about {
+    background-image: url(../img/icon/information-button.png); }
 .account-content .tab-content .phone-info {
   margin-top: 10px;
   background-color: #F2F1FE; }
@@ -1586,13 +1605,15 @@ ul.nav.list-dk li {
   position: relative; }
   .bang-xep-hang .wrap::before {
     content: "";
-    background-image: url(../img/icon/icon_stiker.png);
+    background-image: url(../img/icon/icon_cup_no1.png);
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
     width: 64px;
     height: 56px;
-    background-size: contain; }
+    background-size: contain;
+    left: 10px;
+    top: 10px; }
   .bang-xep-hang .wrap .head {
     padding: 10px 10px;
     background: linear-gradient(180deg, #E34421 0%, #D9401F 100%);
@@ -1603,13 +1624,13 @@ ul.nav.list-dk li {
   .bang-xep-hang .wrap .content {
     padding: 15px; }
     .bang-xep-hang .wrap .content li {
-      width: 25%; }
+      width: 64px; }
       .bang-xep-hang .wrap .content li img {
         width: 100%; }
 .bang-xep-hang .num2 .wrap::before {
-  background-image: url(../img/icon/icon_stiker2.png); }
+  background-image: url(../img/icon/icon_cup_no2.png); }
 .bang-xep-hang .num3 .wrap::before {
-  background-image: url(../img/icon/icon_stiker3.png); }
+  background-image: url(../img/icon/icon_cup_no3.png); }
 .bang-xep-hang .rank-wrap .rank-item {
   background-color: #fff;
   border-radius: 6px;
@@ -1641,7 +1662,7 @@ ul.nav.list-dk li {
     flex-direction: column;
     padding-left: 20px; }
   .bang-xep-hang .rank-wrap .rank-item .right .item {
-    width: 25%; }
+    max-width: 48px; }
 
 /* ======================= FORM LOGIN ===========================*/
 @media (max-width: 991px) {
