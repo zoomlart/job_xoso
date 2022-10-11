@@ -2383,6 +2383,13 @@ ul.nav.list-dk{
             }
         }
     }
+    .num4{
+        .wrap{
+            &::before{
+                background-image: url(../img/icon/icon_cup_no4.png);
+            }
+        }
+    }
     .rank-wrap{
         .rank-item{
             background-color: #fff;

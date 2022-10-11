@@ -1631,6 +1631,8 @@ ul.nav.list-dk li {
   background-image: url(../img/icon/icon_cup_no2.png); }
 .bang-xep-hang .num3 .wrap::before {
   background-image: url(../img/icon/icon_cup_no3.png); }
+.bang-xep-hang .num4 .wrap::before {
+  background-image: url(../img/icon/icon_cup_no4.png); }
 .bang-xep-hang .rank-wrap .rank-item {
   background-color: #fff;
   border-radius: 6px;
