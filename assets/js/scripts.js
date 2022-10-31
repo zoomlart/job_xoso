@@ -72,3 +72,7 @@ $(document).ready(function() {
         }
     });
 });
+const allPlatform = document.querySelector('.all-platform')
+allPlatform.addEventListener('click', function(){
+    allPlatform.classList.toggle('is_active')
+}) 

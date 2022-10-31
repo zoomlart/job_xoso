@@ -324,23 +324,64 @@ span.icon.arrows {
 
 .services {
   margin-bottom: 90px; }
-
-.services .card {
-  border: 0;
-  background-color: #3A3E71;
-  background-image: url(../img/icon-computer.png);
-  background-size: auto;
-  background-position: top left;
-  background-repeat: no-repeat;
-  border-radius: 10px;
-  overflow: hidden;
-  color: #D0D3FF;
-  line-height: 1.25;
-  height: 125px;
-  display: flex;
-  align-items: center;
-  padding: 0;
-  flex-direction: row; }
+  .services .card {
+    border: 0;
+    background-color: #3A3E71;
+    background-image: url(../img/icon-computer.png);
+    background-size: auto;
+    background-position: top left;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    color: #D0D3FF;
+    line-height: 1.25;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    flex-direction: row; }
+    .services .card.all-platform {
+      background-image: url(../img/img-platform.png); }
+    .services .card.support-247 {
+      background-image: url(../img/img-support-247.png); }
+    .services .card .tooltip-content {
+      max-width: 680px;
+      width: 680px;
+      position: absolute;
+      background-color: #2B2D48;
+      border-radius: 12px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin-top: -160px;
+      display: none;
+      visibility: hidden; }
+      @media (max-width: 767px) {
+        .services .card .tooltip-content {
+          width: 100%; } }
+      .services .card .tooltip-content:before {
+        content: "";
+        border-top: 18px solid #2B2D48;
+        border-left: 18px solid transparent;
+        border-right: 18px solid transparent;
+        position: absolute;
+        z-index: 1000;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 14px); }
+      .services .card .tooltip-content .tooltip-title {
+        background-color: #5B54E1;
+        border-radius: 12px 12px 0 0; }
+      .services .card .tooltip-content .icon-close {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 15px; }
+      @media (max-width: 767px) {
+        .services .card .tooltip-content .tooltip__wrapper {
+          gap: 15px !important;
+          padding: 15px !important; } }
+    .services .card.is_active .tooltip-content {
+      display: block;
+      visibility: visible; }
 
 .services .body-card {
   margin-left: 90px;
